@@ -147,9 +147,8 @@ h3.title {
     }
 }
 
-.sold-group button{
+.sold-group {
     font-size: 14px;
-    border-radius: 0;
     &.cart {
         background: url(../assets/images/cart_w.svg) no-repeat 40% 50%;
         background-color: black;
@@ -422,8 +421,8 @@ h3.title {
                                         <button type="button" class="wishlist btn btn-black btn-lg">加入收藏</button>
                                     </div>
                                     <div class="sold-group d-grid gap-2" v-else>
-                                        <button class="cart btn btn-black btn-lg" type="button">加入購物車</button>
-                                        <button class="btn btn-danger btn-sm" type="button">Sold Out</button>
+                                        <button class="cart btn btn-black btn-lg rounded-0" type="button">加入購物車</button>
+                                        <div class="bg-danger text-white text-center">Sold Out</div>
                                     </div>
                                 </div>
                             </div>
