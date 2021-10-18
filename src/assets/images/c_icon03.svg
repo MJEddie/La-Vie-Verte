@@ -4,13 +4,14 @@
 	 y="0px" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#858585;stroke-miterlimit:10;}
-	.st1{fill:#858585;}
+	.st1{fill:none;stroke:#858585;stroke-width:2;stroke-miterlimit:10;}
 </style>
 <g>
 	<circle class="st0" cx="12" cy="12" r="11.5"/>
 </g>
 <g>
-	<polygon class="st1" points="16.3,17.5 7.7,17.5 6.5,9.5 17.5,9.5 	"/>
-	<rect x="6" y="6.5" class="st1" width="12" height="2"/>
+	<line class="st1" x1="17.3" y1="6.7" x2="6.8" y2="17.2"/>
+	<polyline class="st1" points="17.1,12.7 17.3,6.7 11.3,6.9 	"/>
+	<polyline class="st1" points="6.9,11.3 6.7,17.3 12.7,17.1 	"/>
 </g>
 </svg>

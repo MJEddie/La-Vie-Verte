@@ -1,3 +1,45 @@
+<style scoped lang="scss">
+
+  nav li a.nav-link {
+    color: #000;
+    line-height: 60px;
+    height: 60px;
+    font-size: 13px;
+    padding: 0 1.625rem;
+    &.login {
+    background: url(../assets/images/lock.svg) no-repeat 0 50%;
+    }
+    &.signup {
+    background: url(../assets/images/account.svg) no-repeat 0 50%;
+    }
+    &.wish {
+    background: url(../assets/images/heart.svg) no-repeat 0 50%;
+    }
+    &.cart {
+    background: url(../assets/images/cart.svg) no-repeat 0 50%;
+    }   
+}
+
+nav ul li span.nav-link.search {
+    width: 60px;
+    height: 60px;
+    background: url(../assets/images/search.svg) no-repeat 50% 50%;
+    background-color: #000;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+
+nav.navbar.menu {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    li a.nav-link {
+    padding: 0 2.5rem;
+    font-size: 12px;
+    }
+}
+
+</style>
+
 <template>
   <header>
         <nav class="navbar py-0">
@@ -51,44 +93,4 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
 
-  nav li a.nav-link {
-    color: #000;
-    line-height: 60px;
-    height: 60px;
-    font-size: 13px;
-    padding: 0 1.625rem;
-    .nav-link.login {
-    background: url(../assets/images/lock.svg) no-repeat 0 50%;
-    }
-    .nav-link.signup {
-    background: url(../assets/images/account.svg) no-repeat 0 50%;
-    }
-    .nav-link.wish {
-    background: url(../assets/images/heart.svg) no-repeat 0 50%;
-    }
-    .nav-link.cart {
-    background: url(../assets/images/cart.svg) no-repeat 0 50%;
-    }   
-}
-
-nav ul li span.nav-link.search {
-    width: 60px;
-    height: 60px;
-    background: url(../assets/images/search.svg) no-repeat 50% 50%;
-    background-color: #000;
-    background-size: 24px 24px;
-    cursor: pointer;
-}
-
-nav.navbar.menu {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    li a.nav-link {
-    padding: 0 2.5rem;
-    font-size: 12px;
-    }
-}
-
-</style>
