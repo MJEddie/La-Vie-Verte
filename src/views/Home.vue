@@ -76,7 +76,7 @@ KIDORIオススメの群生株を今回入荷致しました。</p>
       </div>
     </div>
 
-    <div class="item week container-fluid w-100 py-5">
+    <div class="item week container-fluid w-100 py-5 mb-5">
       <div class="row container-xl d-flex justify-content-evenly">
         <div class="col-sm-6 col-md-3">
           <div class="card h-100 border-0">
@@ -107,6 +107,53 @@ KIDORIオススメの群生株を今回入荷致しました。</p>
             <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_6370.jpg" class="card-img-top" alt="...">
             <div class="card-body p-0">
             <p class="card-text pt-1">KIDORIのオススメユーフォルビアの群生株</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-end w-100 mt-5 px-0 pt-3">
+      <div class="info new-arrival d-flex flex-column align-self-center">
+        <h2 class="title text-center">新入荷<br>
+        <span class="subtitle">New Arrival</span>
+        </h2>
+        <p class="heading fs-6 fw-bold mb-1">観葉や多肉盆栽、本格盆栽など入荷中</p>
+        <p class="intro">KIDORIならではの観葉盆栽や多肉盆栽を作りました。厳選のコウチョウギなどもオススメです。</p>
+      </div>
+      <div class="thumbnail new-arrival flex-shrink-0"></div>
+    </div>
+    <div class="item new-arrival container-fluid w-100 py-5 mb-5">
+      <div class="row container-xl d-flex justify-content-evenly">
+        <div class="col-sm-6 col-md-3">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_7859.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+            <p class="card-text pt-1">石付きのボトルツリー</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_7889.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+            <p class="card-text pt-1">ソフォラ盆栽仕立て</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_6802.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+            <p class="card-text pt-1">月面をイメージしたSAGA01（KONECT）</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_8532.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+            <p class="card-text pt-1">黄金姫花月(金のなる木)盆栽風</p>
             </div>
           </div>
         </div>
@@ -188,6 +235,10 @@ nav.navbar.menu li a.nav-link {
     background: url(../assets/images/background_week_big.jpg)no-repeat 0% 50%;
     background-size: cover;
   }
+  &.new-arrival {
+    background: url(../assets/images/background_new-arrival_big.jpg)no-repeat 0% 50%;
+    background-size: cover;
+  }
 }
 
 .info {
@@ -195,8 +246,13 @@ nav.navbar.menu li a.nav-link {
   height: 420px;
   background-color: rgba(244,244,244,0.5);
   padding: 70px;
-  margin-left: -13%;
   z-index: 1;
+  &.week {
+    margin-left: -13%;
+  }
+  &.new-arrival {
+    margin-right: -13%;
+  }
   h2 {
     letter-spacing: 3px;
     background: url(../assets/images/background_small.svg) no-repeat bottom center;
@@ -221,13 +277,21 @@ nav.navbar.menu li a.nav-link {
 }
 
 .item {
-  background: #f4e3cc;
-  .row {
-    max-width: 1020px;
-    margin: 0 auto;
+  &.week {
+    background: #f4e3cc;
+    }
     .card {
       background: #f4e3cc;
     }
+  &.new-arrival {
+    background: #1e445b;
+    .card {
+      background: #1e445b;
+    }
+  }
+  .row {
+    max-width: 1020px;
+    margin: 0 auto;
     .card-text {
       font-size: 13px;
     }
