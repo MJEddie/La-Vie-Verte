@@ -42,13 +42,13 @@
       </div>
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
+          <div class="carousel-item active" data-bs-interval="5000">
             <img src="../assets/images/slider_image_1.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item" data-bs-interval="5000">
             <img src="../assets/images/slider_image_2.jpg" class="d-block w-100" alt="">
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
+          <div class="carousel-item" data-bs-interval="5000">
             <img src="../assets/images/slider_image_3.jpg" class="d-block w-100" alt="">
           </div>
         </div>
@@ -218,7 +218,31 @@
         </div>
       </div>
     </div>
-
+    
+    <div class="concept text-center my-3">
+      <div class="logo">
+        <img src="../assets/images/logo.svg" alt="">
+      </div>
+      <h2>あなたの日々を彩る緑</h2>
+      <p class="jp fs-6">
+        一つ一つ、職人の手で仕上げられた、個性豊かなKIDORIの植物たち。
+        <br>
+        特別な一鉢を暮らしに添えて
+        <br>
+        何気ない日常を 心地よく 豊かに
+        <br>
+        緑で、気取りを。
+      </p>
+      <p class="en">
+        <b>“Green” will bring some color to your everyday life.</b>
+        <br>
+        KIDORI plants, each perfected by craftsmen,are full of uniqueness.
+        <br>
+        Add comfort and richness to your simple everyday life with a special pot.
+        <br>
+        A sense of “green” with KIDORI.
+      </p>
+    </div>
   </main>
   <Footer></Footer>
 </template>
@@ -383,6 +407,30 @@ nav.navbar.menu li a.nav-link {
   }
   .card-text {
     font-size: 13px;
+  }
+}
+
+.concept {
+  letter-spacing: 1px;
+  padding: 90px 0;
+  .logo img{
+    width: 275px;
+    height: auto;
+  }
+  h2 {
+    margin: 50px 0;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 26px;
+    line-height: 2.2em;
+  }
+  .jp {
+    margin-bottom: 30px;
+    line-height: 1.8em;
+  }
+  .en {
+    font-size: 15px;
+    line-height: 1.8em;
+    font-family: "Times New Roman", serif;
   }
 }
 
