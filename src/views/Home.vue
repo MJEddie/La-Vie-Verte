@@ -29,7 +29,7 @@
     </div>
 
     <div class="container-fluid d-flex justify-content-end w-100 px-0">
-      <div class="slider-title">
+      <div class="carousel-title">
           <h1>
             植物と暮らそう
             <br>
@@ -40,8 +40,18 @@
             緑で、気取りを。
           </h1>
       </div>
-      <div class="slider flex-shrink-0">
-        <img src="../assets/images/slider_image_1.jpg" alt="...">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="../assets/images/slider_image_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../assets/images/slider_image_2.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../assets/images/slider_image_3.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -49,7 +59,7 @@
       <div class="container justify-content-center">
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a href="#" class="nav-link">HOME</a>
+            <router-link to="/" class="nav-link">HOME</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/products" class="nav-link">PRODUCTS</router-link>
@@ -64,104 +74,108 @@
       </div>
     </nav>
 
-    <div class="container-fluid d-flex justify-content-start w-100 mt-5 px-0 pt-3">
-      <div class="thumbnail week flex-shrink-0"></div>
-      <div class="info week d-flex flex-column align-self-center">
-        <h2 class="title text-center">群生ユーフォルビア<br>
-        <span class="subtitle">this week's special</span>
-        </h2>
-        <p class="heading fs-6 fw-bold mb-1">密集する株がおりなすフォルム</p>
-        <p class="intro">ユーフォルビアには様々な種類がいて、形も様々ですが魅力的な群生を作る種も多いです。
-KIDORIオススメの群生株を今回入荷致しました。</p>
-      </div>
-    </div>
-
-    <div class="item week container-fluid w-100 py-5 mb-5">
-      <div class="row container-xl d-flex justify-content-evenly">
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_5759.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">子吹きが作る独特なフォルム</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_5791.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">一株一株の存在感</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_5814.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">見事な球状の群生</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_6370.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">KIDORIのオススメユーフォルビアの群生株</p>
-            </div>
-          </div>
+    <section class="week">
+      <div class="container-fluid d-flex justify-content-start w-100 mt-5 px-0 pt-3">
+        <div class="thumbnail week flex-shrink-0"></div>
+        <div class="info week d-flex flex-column align-self-center">
+          <h2 class="title text-center">群生ユーフォルビア<br>
+          <span class="subtitle">this week's special</span>
+          </h2>
+          <p class="heading fs-6 fw-bold mb-1">密集する株がおりなすフォルム</p>
+          <p class="intro">ユーフォルビアには様々な種類がいて、形も様々ですが魅力的な群生を作る種も多いです。
+  KIDORIオススメの群生株を今回入荷致しました。</p>
         </div>
       </div>
-    </div>
-
-    <div class="container-fluid d-flex justify-content-end w-100 mt-5 px-0 pt-3">
-      <div class="info new-arrival d-flex flex-column align-self-center">
-        <h2 class="title text-center">新入荷<br>
-        <span class="subtitle">New Arrival</span>
-        </h2>
-        <p class="heading fs-6 fw-bold mb-1">観葉や多肉盆栽、本格盆栽など入荷中</p>
-        <p class="intro">KIDORIならではの観葉盆栽や多肉盆栽を作りました。厳選のコウチョウギなどもオススメです。</p>
-      </div>
-      <div class="thumbnail new-arrival flex-shrink-0"></div>
-    </div>
-
-    <div class="item new-arrival container-fluid w-100 py-5 mb-5">
-      <div class="row container-xl d-flex justify-content-evenly">
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_7859.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">石付きのボトルツリー</p>
+      
+      <div class="item week container-fluid w-100 py-5 mb-5">
+        <div class="row container-xl d-flex justify-content-evenly">
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_5759.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">子吹きが作る独特なフォルム</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_7889.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">ソフォラ盆栽仕立て</p>
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_5791.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">一株一株の存在感</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_6802.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">月面をイメージしたSAGA01（KONECT）</p>
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_5814.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">見事な球状の群生</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="card h-100 border-0">
-            <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_8532.jpg" class="card-img-top" alt="...">
-            <div class="card-body p-0">
-            <p class="card-text pt-1">黄金姫花月(金のなる木)盆栽風</p>
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2018/10/IMG_6370.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">KIDORIのオススメユーフォルビアの群生株</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="recommend container">
+    <section class="new-arrival">
+      <div class="container-fluid d-flex justify-content-end w-100 mt-5 px-0 pt-3">
+        <div class="info new-arrival d-flex flex-column align-self-center">
+          <h2 class="title text-center">新入荷<br>
+          <span class="subtitle">New Arrival</span>
+          </h2>
+          <p class="heading fs-6 fw-bold mb-1">観葉や多肉盆栽、本格盆栽など入荷中</p>
+          <p class="intro">KIDORIならではの観葉盆栽や多肉盆栽を作りました。厳選のコウチョウギなどもオススメです。</p>
+        </div>
+        <div class="thumbnail new-arrival flex-shrink-0"></div>
+      </div>
+
+      <div class="item new-arrival container-fluid w-100 py-5 mb-5">
+        <div class="row container-xl d-flex justify-content-evenly">
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_7859.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">石付きのボトルツリー</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_7889.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">ソフォラ盆栽仕立て</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_6802.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">月面をイメージしたSAGA01（KONECT）</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="card h-100 border-0">
+              <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_8532.jpg" class="card-img-top" alt="...">
+              <div class="card-body p-0">
+              <p class="card-text pt-1">黄金姫花月(金のなる木)盆栽風</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="recommend container mb-5">
       <h2 class="title text-center">ピックアップ<br>
         <span class="subtitle">Pick Up</span>
       </h2>
@@ -204,6 +218,7 @@ KIDORIオススメの群生株を今回入荷致しました。</p>
         </div>
       </div>
     </div>
+
   </main>
   <Footer></Footer>
 </template>
@@ -240,9 +255,9 @@ nav ul li span.nav-link.search {
   cursor: pointer;
 }
 
-.slider-title {
+.carousel-title {
   width: 18%;
-  z-index: 1;
+  z-index: 10;
   flex-shrink: 0;
   margin-right: -8%;
   margin-top: -5.5%;
@@ -257,7 +272,7 @@ nav ul li span.nav-link.search {
   }
 }
 
-.slider {
+.carousel.slide {
   position: relative;
   width: 82%;
   img {
