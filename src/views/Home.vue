@@ -123,6 +123,7 @@ KIDORIオススメの群生株を今回入荷致しました。</p>
       </div>
       <div class="thumbnail new-arrival flex-shrink-0"></div>
     </div>
+
     <div class="item new-arrival container-fluid w-100 py-5 mb-5">
       <div class="row container-xl d-flex justify-content-evenly">
         <div class="col-sm-6 col-md-3">
@@ -154,6 +155,50 @@ KIDORIオススメの群生株を今回入荷致しました。</p>
             <img src="https://ki-do-ri.jp/contents/wp-content/uploads/2017/07/IMG_8532.jpg" class="card-img-top" alt="...">
             <div class="card-body p-0">
             <p class="card-text pt-1">黄金姫花月(金のなる木)盆栽風</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="recommend container">
+      <h2 class="title text-center">ピックアップ<br>
+        <span class="subtitle">Pick Up</span>
+      </h2>
+      <div class="row d-flex flex-row justify-content-evenly">
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/upload/save_image/11121555_5be923ecdfeba.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">盆栽豆金柑-キンズ-</h5>
+              <p class="card-text">販売価格： <span class="price">￥11,000(税込)</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/upload/save_image/11121402_5be9097214c86.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">亀甲竜-ディオスコレア-</h5>
+              <p class="card-text">販売価格： <span class="price">￥11,000(税込)</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/upload/save_image/01101417_5c36d56ec7bd0.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">厳選八ツ房コウチョウギSAGA02</h5>
+              <p class="card-text">販売価格： <span class="price">￥11,000(税込)</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img src="https://ki-do-ri.jp/upload/save_image/01111127_5c37ff21e7fce.jpg" class="card-img-top" alt="...">
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">厳選八ツ房コウチョウギCOSMO</h5>
+              <p class="card-text">販売価格： <span class="price">￥11,000(税込)</span></p>
             </div>
           </div>
         </div>
@@ -267,7 +312,7 @@ nav.navbar.menu li a.nav-link {
       content: '';
       display: block;
       width: 150px;
-      margin: 0 auto;
+      margin: 20px auto 0;
       border-bottom: 2px solid #000;
     }
   }
@@ -295,6 +340,34 @@ nav.navbar.menu li a.nav-link {
     .card-text {
       font-size: 13px;
     }
+  }
+}
+
+.recommend {
+  max-width: 1020px;
+  margin: 0 auto;
+  h2 {
+    letter-spacing: 3px;
+    margin: 110px 0 60px;
+    padding-bottom: 18px;
+    span {
+      font-family: "Times New Roman", serif;
+      font-size: 17px;
+      letter-spacing: normal;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 100px;
+      margin: 20px auto 0;
+      border-bottom: 2px solid #000;
+    }
+  }
+  .card-title {
+    font-size: 12px;
+  }
+  .card-text {
+    font-size: 13px;
   }
 }
 
