@@ -32,13 +32,13 @@
                         <router-link to="/" class="nav-link">HOME</router-link>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">PRODUCTS</a>
+                         <router-link to="/products" class="nav-link">PRODUSTC</router-link>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">SHOPPING GUIDE</a>
+                         <router-link to="/guide" class="nav-link">SHOPPING GUIDE</router-link>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">CONTACT</a>
+                         <router-link to="/contact" class="nav-link">CONTACT</router-link>
                     </li>
                 </ul>
             </div>
