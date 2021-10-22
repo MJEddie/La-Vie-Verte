@@ -22,7 +22,7 @@
     </section>
 
     <section class="info container">
-      <div class="card mb-3 w-100 border-0">
+      <div class="card mb-5 w-100 border-0">
         <div class="list row" v-for="item in Product" :key="item.id">
           <div class="col-md-5">
             <!-- <img :src="item.url" alt="" class="w-100" /> -->
@@ -101,8 +101,8 @@
                   style="width: 100px;"
               /></swiper-slide>
             </swiper>
-            <div id="navigation" class="swiper-button-prev text-black"></div>
-            <div id="navigation" class="swiper-button-next text-black"></div>
+            <div class="swiper-button-prev text-black"></div>
+            <div class="swiper-button-next text-black"></div>
           </div>
           <div class="col-md-7 ps-4">
             <div class="card-body pt-0">
@@ -168,6 +168,28 @@
         </div>
       </div>
     </section>
+    <div class="intro-block container-fluid w-100">
+      <div class="wrap container d-flex">
+        <div class="message col-lg-6">
+          <div class="pt"><span>Point</span></div>
+          <div class="summary bg-white h-100">
+            <h3>これぞ盆栽という見事な樹形</h3>
+            <p>
+              コケ順、枝ぶり、樹形ととても美しい一品です。
+              <br />
+              <br />
+              正面はもちろんですがどの角度からも楽しむことのできます。
+            </p>
+          </div>
+        </div>
+        <div class="image col-lg-6">
+          <img
+            src="https://ki-do-ri.jp/upload/save_image/02011828_5c54112ee02bf.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
   </main>
   <Footer></Footer>
 </template>
@@ -312,6 +334,54 @@ section.info {
         padding-left: 30px;
         background: url(../assets/images/wrapping.svg) no-repeat 0 50%;
       }
+    }
+  }
+}
+
+.intro-block {
+  padding: 64px 0;
+  background: #f0eee2;
+  .wrap {
+    max-width: 1300px;
+    padding: 0 50px;
+    .message {
+      position: relative;
+      .pt {
+        position: absolute;
+        display: block;
+        border-style: solid;
+        border-width: 40px 40px 0 0;
+        border-color: #000 transparent transparent transparent;
+        z-index: 200;
+        span {
+          position: absolute;
+          display: block;
+          transform: rotate(-45deg);
+          width: 50px;
+          text-align: center;
+          top: -25px;
+          left: 5px;
+          font-size: 14px;
+        }
+      }
+      .summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 70px 50px;
+        h3 {
+          margin-bottom: 20px;
+          font-size: 22px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 2em;
+        }
+      }
+    }
+    .image img {
+      width: 100%;
+      height: auto;
     }
   }
 }
