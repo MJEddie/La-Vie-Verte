@@ -2,194 +2,192 @@
   <NavBar></NavBar>
   <main>
     <div class="breadcrumb h-auto mb-0" style="--bs-breadcrumb-divider: ''">
-        <ol class="breadcrumb fw-light mb-0">
-            <li class="breadcrumb-item px-4">
-                <a href="#">
-                    <span>HOME</span>
-                </a>
-            </li>
-            <li class="breadcrumb-item px-4 active" aria-current="page">
-                <span>PRODUCTS 全商品</span>
-            </li>
-        </ol>
+      <ol class="breadcrumb fw-light mb-0">
+        <li class="breadcrumb-item px-4">
+          <router-link to="/"><span>HOME</span></router-link>
+        </li>
+        <li class="breadcrumb-item px-4 active" aria-current="page">
+          <span>PRODUCTS 全商品</span>
+        </li>
+      </ol>
     </div>
 
     <h1 class="title fs-4 text-center my-5 pb-3">PRODUCTS</h1>
 
     <section>
-        <div class="list container">
-            <div class="row justify-content-evenly">
-                <div class="col-md-2">
-                    <h3 class="title mb-3 pb-2">SEARCH ITEM</h3>
-                    <div class="list-group mb-2 pb-3">
-                        <p class="m-0">關鍵字</p>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="list-group mb-3 pb-2">
-                        <div class="filter-title fs-6 mb-3 pb-2">
-                            <span class="category c-icon01">商品類型</span>
-                        </div>
-                        <div  id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="部屋木" v-model="filterItems">
-                                <label class="form-check-label s-icon01" for="部屋木">部屋木</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="haconiwa" v-model="filterItems">
-                                <label class="form-check-label s-icon02" for="haconiwa">haconiwa</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="ひととき" v-model="filterItems">
-                                <label class="form-check-label s-icon03" for="ひととき">ひととき</label>
-                            </div>
-                        </div>
-                        <div class="filter-title fs-6 mb-3 pb-2">
-                            <span class="category c-icon02">植物類型</span>
-                        </div>
-                        <div id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="盆景" v-model="filterItems">
-                                <label class="form-check-label" for="盆景">盆景</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="迷你盆景" v-model="filterItems">
-                                <label class="form-check-label" for="迷你盆景">迷你盆景</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="多肉植物" v-model="filterItems">
-                                <label class="form-check-label" for="多肉植物">多肉植物</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="塊根植物" v-model="filterItems">
-                                <label class="form-check-label" for="塊根植物">塊根植物</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="觀葉植物" v-model="filterItems">
-                                <label class="form-check-label" for="觀葉植物">觀葉植物</label>
-                            </div>
-                        </div>
-                        <div class="filter-title fs-6 mb-3 pb-2">
-                            <span class="category c-icon03">尺寸</span>
-                        </div>
-                        <div id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="small" v-model="filterItems">
-                                <label class="form-check-label" for="small">S (15cm 以下)</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="medium" v-model="filterItems">
-                                <label class="form-check-label" for="medium">M (15-59cm)</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="large" v-model="filterItems">
-                                <label class="form-check-label" for="large">L (60-149cm)</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="extra large" v-model="filterItems">
-                                <label class="form-check-label" for="extra large">XL (150cm 以上)</label>
-                            </div>
-                        </div>
-                        <div class="filter-title fs-6 mb-3 pb-2">
-                            <span class="category c-icon04">價格</span>
-                        </div>
-                        <div id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="small" v-model="filterItems">
-                                <label class="form-check-label" for="small">～5000</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="medium" v-model="filterItems">
-                                <label class="form-check-label" for="medium">5001～10000</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="large" v-model="filterItems">
-                                <label class="form-check-label" for="large">10001～20000</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="extra large" v-model="filterItems">
-                                <label class="form-check-label" for="extra large">20001～30000</label>
-                            </div>
-                            <div class="form-check mb-1">
-                                <input class="form-check-input" type="checkbox" value="extra large" v-model="filterItems">
-                                <label class="form-check-label" for="extra large">30001～</label>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-black w-100">SEARCH</button>
+      <div class="list container">
+        <div class="row justify-content-evenly">
+          <div class="col-md-2">
+            <h3 class="title mb-3 pb-2">SEARCH ITEM</h3>
+            <div class="list-group mb-2 pb-3">
+              <p class="m-0">關鍵字</p>
+              <input type="text" class="form-control">
+            </div>
+            <div class="list-group mb-3 pb-2">
+              <div class="filter-title fs-6 mb-3 pb-2">
+                  <span class="category c-icon01">商品類型</span>
                 </div>
-                <div class="col-md-9">
-                    <h3 class="title mb-3 pb-2">全商品</h3>
-                    <div class="switch-view">
-                        <ul class="switch d-flex justify-content-end">
-                            <li class="list" :class="{'active': viewMode == 'list'}" @click="switchMode"></li>
-                            <li class="thumbnail" :class="{'active': viewMode == 'thumbnail'}" @click="switchMode"></li>
-                        </ul>
-                    </div>
-
-                    <div class="row row-cols-1 row-cols-md-3 g-4" v-if="viewMode == 'thumbnail'">
-                        <div class="thumbnail col"  v-for="item in productList" :key="item.id">
-                            <div class="card h-100 border-0">
-                                <img :src= "item.url" class="card-img-top" alt="">
-                                <div class="card-body px-0">
-                                    <h5 class="card-title fw-bold">{{ item.title }}</h5>
-                                    <p class="card-text">售價 <span class="price fs-6">&#36; {{ item.price }}</span> <span class="sold text-danger ms-2" v-if="!item.amount">Sold Out</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card mb-3 w-100 border-0" v-else>
-                        <div class="list row g-0" v-for="item in productList" :key="item.id">
-                            <div class="col-md-4">
-                                <img :src="item.url" alt="" class="w-100">
-                            </div>
-                            <div class="col-md-8 ps-4">
-                                <div class="card-body pt-0">
-                                    <h4 class="card-title mb-4 pb-3">{{ item.title }}</h4>
-                                    <ul class="category ps-0">
-                                        <li class="d-inline-block"><span class="s-icon02">{{ item.category[0] }}</span></li>
-                                        <li class="d-inline-block"><span>{{ item.category[1] }}</span></li>
-                                    </ul>
-                                    <p class="description">{{ item.description }}</p>
-                                    <p class="price fw-bold">售價 <span>&#36; {{ item.price }}</span></p>
-                                    <div class="btn-group w-100" role="group" aria-label="Button group with nested dropdown" v-if="item.amount > 0">
-                                        <div class="btn-group" role="group">
-                                            <button type="button" class="btn btn-black btn-lg pe-0">數量：</button>
-                                            <button type="button" class="btn btn-black btn-lg px-3 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">1
-                                                <span class="visually-hidden">Toggle Dropdown</span>
-                                            </button>
-                                            <ul class="dropdown-menu bg-primary">
-                                                <li class="bg-primary"><a class="dropdown-item text-white" href="#">1</a></li>
-                                                <li class="bg-primary"><a class="dropdown-item text-white" href="#">2</a></li>
-                                                <li class="bg-primary"><a class="dropdown-item text-white" href="#">3</a></li>
-                                            </ul>
-                                        </div>
-                                        <button type="button" class="cart btn btn-black btn-lg">加入購物車</button>
-                                        <button type="button" class="wishlist btn btn-black btn-lg">加入收藏</button>
-                                    </div>
-                                    <div class="sold-group d-grid gap-2" v-else>
-                                        <button class="cart btn btn-black btn-lg rounded-0" type="button">加入購物車</button>
-                                        <div class="bg-danger text-white text-center">Sold Out</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <nav class="my-5" aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end align-items-center">
-                            <li class="page-item prev" v-if="prevPageToken"><a class="page-link rounded-2" href="#">&lt;</a></li>
-                            <li class="page-item active" aria-current="page"><a class="page-link rounded-2" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link rounded-2" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link rounded-2" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link rounded-2" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link rounded-2" href="#">5</a></li>
-                            <li class="page-item next"><a class="page-link rounded-2" href="#">&gt;</a></li>
-                        </ul>
-                    </nav>
+                <div  id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="部屋木" v-model="filterItems">
+                      <label class="form-check-label s-icon01" for="部屋木">部屋木</label>
+                  </div>
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="haconiwa" v-model="filterItems">
+                      <label class="form-check-label s-icon02" for="haconiwa">haconiwa</label>
+                  </div>
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="ひととき" v-model="filterItems">
+                      <label class="form-check-label s-icon03" for="ひととき">ひととき</label>
+                  </div>
+                </div>
+                <div class="filter-title fs-6 mb-3 pb-2">
+                  <span class="category c-icon02">植物類型</span>
+                </div>
+                <div id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="盆景" v-model="filterItems">
+                      <label class="form-check-label" for="盆景">盆景</label>
+                  </div>
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="迷你盆景" v-model="filterItems">
+                      <label class="form-check-label" for="迷你盆景">迷你盆景</label>
+                  </div>
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="多肉植物" v-model="filterItems">
+                      <label class="form-check-label" for="多肉植物">多肉植物</label>
+                  </div>
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="塊根植物" v-model="filterItems">
+                      <label class="form-check-label" for="塊根植物">塊根植物</label>
+                  </div>
+                  <div class="form-check mb-1">
+                      <input class="form-check-input" type="checkbox" value="觀葉植物" v-model="filterItems">
+                      <label class="form-check-label" for="觀葉植物">觀葉植物</label>
+                  </div>
+                </div>
+                <div class="filter-title fs-6 mb-3 pb-2">
+                  <span class="category c-icon03">尺寸</span>
+                </div>
+                <div id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="small" v-model="filterItems">
+                    <label class="form-check-label" for="small">S (15cm 以下)</label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="medium" v-model="filterItems">
+                    <label class="form-check-label" for="medium">M (15-59cm)</label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="large" v-model="filterItems">
+                    <label class="form-check-label" for="large">L (60-149cm)</label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="extra large" v-model="filterItems">
+                    <label class="form-check-label" for="extra large">XL (150cm 以上)</label>
+                  </div>
+                </div>
+                <div class="filter-title fs-6 mb-3 pb-2">
+                  <span class="category c-icon04">價格</span>
+                </div>
+                <div id="v-model-multiple-checkboxes" class="filter-type pb-3 mb-2">
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="small" v-model="filterItems">
+                    <label class="form-check-label" for="small">～5000</label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="medium" v-model="filterItems">
+                    <label class="form-check-label" for="medium">5001～10000</label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="large" v-model="filterItems">
+                    <label class="form-check-label" for="large">10001～20000</label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="extra large" v-model="filterItems">
+                    <label class="form-check-label" for="extra large">20001～30000</label>
+                  </div>
+                  <div class="form-check mb-1">
+                    <input class="form-check-input" type="checkbox" value="extra large" v-model="filterItems">
+                    <label class="form-check-label" for="extra large">30001～</label>
+                  </div>
                 </div>
             </div>
+            <button type="submit" class="btn btn-black w-100">SEARCH</button>
+          </div>
+          <div class="col-md-9">
+              <h3 class="title mb-3 pb-2">全商品</h3>
+              <div class="switch-view">
+                  <ul class="switch d-flex justify-content-end">
+                      <li class="list" :class="{'active': viewMode == 'list'}" @click="switchMode"></li>
+                      <li class="thumbnail" :class="{'active': viewMode == 'thumbnail'}" @click="switchMode"></li>
+                  </ul>
+              </div>
+
+              <div class="row row-cols-1 row-cols-md-3 g-4" v-if="viewMode == 'thumbnail'">
+                  <div class="thumbnail col"  v-for="item in productList" :key="item.id">
+                      <div class="card h-100 border-0">
+                          <img :src= "item.url" class="card-img-top" alt="">
+                          <div class="card-body px-0">
+                              <h5 class="card-title fw-bold">{{ item.title }}</h5>
+                              <p class="card-text">售價 <span class="price fs-6">&#36; {{ item.price }}</span> <span class="sold text-danger ms-2" v-if="!item.amount">Sold Out</span></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="card mb-3 w-100 border-0" v-else>
+                  <div class="list row g-0" v-for="item in productList" :key="item.id">
+                      <div class="col-md-4">
+                          <img :src="item.url" alt="" class="w-100">
+                      </div>
+                      <div class="col-md-8 ps-4">
+                          <div class="card-body pt-0">
+                              <h4 class="card-title mb-4 pb-3">{{ item.title }}</h4>
+                              <ul class="category ps-0">
+                                  <li class="d-inline-block"><span class="s-icon02">{{ item.category[0] }}</span></li>
+                                  <li class="d-inline-block"><span>{{ item.category[1] }}</span></li>
+                              </ul>
+                              <p class="description">{{ item.description }}</p>
+                              <p class="price fw-bold">售價 <span>&#36; {{ item.price }}</span></p>
+                              <div class="btn-group w-100" role="group" aria-label="Button group with nested dropdown" v-if="item.amount > 0">
+                                  <div class="btn-group" role="group">
+                                      <button type="button" class="btn btn-black btn-lg pe-0">數量：</button>
+                                      <button type="button" class="btn btn-black btn-lg px-3 dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">1
+                                          <span class="visually-hidden">Toggle Dropdown</span>
+                                      </button>
+                                      <ul class="dropdown-menu bg-primary">
+                                          <li class="bg-primary"><a class="dropdown-item text-white" href="#">1</a></li>
+                                          <li class="bg-primary"><a class="dropdown-item text-white" href="#">2</a></li>
+                                          <li class="bg-primary"><a class="dropdown-item text-white" href="#">3</a></li>
+                                      </ul>
+                                  </div>
+                                  <button type="button" class="cart btn btn-black btn-lg">加入購物車</button>
+                                  <button type="button" class="wishlist btn btn-black btn-lg">加入收藏</button>
+                              </div>
+                              <div class="sold-group d-grid gap-2" v-else>
+                                  <button class="cart btn btn-black btn-lg rounded-0" type="button">加入購物車</button>
+                                  <div class="bg-danger text-white text-center">Sold Out</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <nav class="my-5" aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end align-items-center">
+                      <li class="page-item prev" v-if="prevPageToken"><a class="page-link rounded-2" href="#">&lt;</a></li>
+                      <li class="page-item active" aria-current="page"><a class="page-link rounded-2" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link rounded-2" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link rounded-2" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link rounded-2" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link rounded-2" href="#">5</a></li>
+                      <li class="page-item next"><a class="page-link rounded-2" href="#">&gt;</a></li>
+                  </ul>
+              </nav>
+          </div>
         </div>
+      </div>
     </section>
   </main>
   <Footer></Footer>
