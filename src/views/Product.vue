@@ -21,7 +21,7 @@
       <p class="description">美しく完成された五葉松</p>
     </section>
 
-    <section class="info container">
+    <section class="info container-xxl">
       <div class="card mb-5 w-100 border-0">
         <div class="list row" v-for="item in Product" :key="item.id">
           <div class="col-md-5">
@@ -168,25 +168,97 @@
         </div>
       </div>
     </section>
+
     <div class="intro-block container-fluid w-100">
-      <div class="wrap container d-flex">
-        <div class="message col-lg-6">
-          <div class="pt"><span>Point</span></div>
-          <div class="summary bg-white h-100">
-            <h3>これぞ盆栽という見事な樹形</h3>
-            <p>
-              コケ順、枝ぶり、樹形ととても美しい一品です。
-              <br />
-              <br />
-              正面はもちろんですがどの角度からも楽しむことのできます。
-            </p>
+      <div class="wrap containe-xxl d-flex">
+        <div class="row gx-0">
+          <div class="message col-lg-6">
+            <div class="pt"><span>Point</span></div>
+            <div class="summary bg-white h-100">
+              <h3>これぞ盆栽という見事な樹形</h3>
+              <p>
+                コケ順、枝ぶり、樹形ととても美しい一品です。
+                <br />
+                <br />
+                正面はもちろんですがどの角度からも楽しむことのできます。
+              </p>
+            </div>
+          </div>
+          <div class="image col-lg-6">
+            <img
+              src="https://ki-do-ri.jp/upload/save_image/02011828_5c54112ee02bf.jpg"
+              alt=""
+            />
           </div>
         </div>
-        <div class="image col-lg-6">
-          <img
-            src="https://ki-do-ri.jp/upload/save_image/02011828_5c54112ee02bf.jpg"
-            alt=""
-          />
+      </div>
+    </div>
+
+    <div class="related-items container mb-5">
+      <h2 class="title text-center">
+        関連した商品<br />
+        <span class="subtitle">Related Items</span>
+      </h2>
+      <div class="row d-flex flex-row justify-content-evenly">
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img
+              src="https://ki-do-ri.jp/upload/save_image/07091822_5b432958a0768.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">盆栽八ツ房エゴノキ石付 M</h5>
+              <p class="card-text">
+                販売価格： <span class="price">￥12,960 (税込)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img
+              src="https://ki-do-ri.jp/upload/save_image/07101922_5b44890375034.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">盆栽黒松</h5>
+              <p class="card-text">
+                販売価格： <span class="price">￥216,000(税込)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img
+              src="https://ki-do-ri.jp/upload/save_image/08141549_5b727b8dec622.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">盆栽石化桧no.4</h5>
+              <p class="card-text">
+                販売価格： <span class="price">￥129,600(税込)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 px-2">
+          <div class="card h-100 border-0">
+            <img
+              src="https://ki-do-ri.jp/upload/save_image/09051414_5b8f6641e876c.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body p-0">
+              <h5 class="card-title fw-bold pt-2">盆栽楓</h5>
+              <p class="card-text">
+                販売価格： <span class="price">￥43,200(税込)</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -250,7 +322,6 @@
 }
 
 section.info {
-  max-width: 1300px;
   padding: 70px 50px 0 50px;
   .card-title {
     padding-bottom: 10px;
@@ -342,7 +413,6 @@ section.info {
   padding: 64px 0;
   background: #f0eee2;
   .wrap {
-    max-width: 1300px;
     padding: 0 50px;
     .message {
       position: relative;
@@ -383,6 +453,34 @@ section.info {
       width: 100%;
       height: auto;
     }
+  }
+}
+
+.related-items {
+  max-width: 1020px;
+  margin: 0 auto;
+  h2 {
+    letter-spacing: 3px;
+    margin: 30px 0 60px;
+    padding-bottom: 18px;
+    span {
+      font-family: "Times New Roman", serif;
+      font-size: 17px;
+      letter-spacing: normal;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 100px;
+      margin: 20px auto 0;
+      border-bottom: 2px solid #000;
+    }
+  }
+  .card-title {
+    font-size: 12px;
+  }
+  .card-text {
+    font-size: 13px;
   }
 }
 </style>
