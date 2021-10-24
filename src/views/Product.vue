@@ -170,7 +170,7 @@
     </section>
 
     <div class="intro-block container-fluid w-100">
-      <div class="wrap containe-xxl d-flex">
+      <div class="wrap container-xxl d-flex">
         <div class="row gx-0">
           <div class="message col-lg-6">
             <div class="pt"><span>Point</span></div>
@@ -190,6 +190,166 @@
               alt=""
             />
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec container-xxl">
+      <div class="row gx-0 justify-content-between">
+        <div class="detail col-lg-6">
+          <div class="d-flex justify-content-between">
+            <div class="item d-flex align-items-center">
+              <span>難易度</span>
+            </div>
+            <div class="progress rounded-0 bg-transparent my-3 w-100">
+              <div
+                class="progress-bar bg-gray-light"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-gray-mild"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-green-light"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="item d-flex align-items-center">
+              <span>レア度</span>
+            </div>
+            <div class="progress rounded-0 bg-transparent my-3 w-100">
+              <div
+                class="progress-bar bg-gray-light"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-gray-mild"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-green-light"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-green-mild"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+              <div
+                class="progress-bar bg-green-dark"
+                role="progressbar"
+                style="width: 20%;"
+                aria-valuenow="20"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="item d-flex"><span>日&emsp;照</span></div>
+            <div class="sunshine-progress my-3 w-100">
+              <dd>
+                <div class="bar mx-1">
+                  <div class="dot">
+                    <span class="level">1</span>
+                  </div>
+                  <div class="dot">
+                    <span class="level">2</span>
+                  </div>
+                  <div class="dot">
+                    <span class="level">3</span>
+                  </div>
+                  <div class="dot">
+                    <span class="level active">4</span>
+                  </div>
+                  <div class="dot">
+                    <span class="level">5</span>
+                  </div>
+                </div>
+              </dd>
+            </div>
+          </div>
+          <div class="icons my-5 d-flex flex-column justify-content-between">
+            <div class="thumbnails d-flex flex-row">
+              <div class="thumbnail">
+                <img
+                  src="../assets/images/icon_002.svg"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <p class="text-center">本格派</p>
+              </div>
+              <div class="thumbnail">
+                <img
+                  src="../assets/images/icon_004.svg"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <p class="text-center">外が好き</p>
+              </div>
+              <div class="thumbnail">
+                <img
+                  src="../assets/images/icon_010.svg"
+                  alt=""
+                  width="50"
+                  height="50"
+                />
+                <p class="text-center">常緑</p>
+              </div>
+            </div>
+            <p>
+              各種アイコン・グラフについての詳細はこちらをご確認ください。
+            </p>
+          </div>
+        </div>
+        <div class="expert col-lg-6 p-2">
+          <div class="wrap border border-1 border-black">
+            <h3>六三四<span>のオススメPOINT</span></h3>
+            <p>
+              素晴らしいですね!
+              <br />
+              本当に大木のような素晴らしい小品盆栽ですね。
+            </p>
+          </div>
+        </div>
+        <div class="notes col-lg12">
+          <p>
+            <b>&#9670;商品注意事項</b>
+            <br />
+            商品はその他でも販売しているため、売切れる場合がございますがご了承ください。当店の取扱植物は一点モノが多く、撮影時期から生育による変型などで画像と異なることがあります。商品の返品は植物ですので原則お受けしておりません。但し、運送中の事故等による破損の場合は商品ご到着後3日以内にご連絡いただければ、ご返金にて対応させて頂きます。
+          </p>
         </div>
       </div>
     </div>
@@ -265,6 +425,50 @@
   </main>
   <Footer></Footer>
 </template>
+
+<script>
+// @ is an alias to /src
+import NavBar from "@/components/NavBar.vue";
+import Footer from "@/components/Footer.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import SwiperCore, { Navigation, Thumbs } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Navigation, Thumbs]);
+
+export default {
+  name: "Product",
+  components: {
+    NavBar,
+    Swiper,
+    SwiperSlide,
+    Footer,
+  },
+  data() {
+    return {
+      thumbsSwiper: null,
+      Product: [
+        {
+          id: 1,
+          amount: 1,
+          category: ["haconiwa", "盆栽"],
+          size: ["器H=5.5cm　W=14cm", "植物　H=17.5 W=31"],
+          url:
+            "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
+          title: "盆栽　五葉松",
+          description: "美しく完成された五葉松",
+          price: 220000,
+        },
+      ],
+    };
+  },
+  methods: {
+    setThumbsSwiper(swiper) {
+      this.thumbsSwiper = swiper;
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 @import "~swiper/swiper-bundle.min.css";
@@ -456,6 +660,120 @@ section.info {
   }
 }
 
+.spec {
+  padding: 64px 50px;
+  .item {
+    width: 64px;
+    span {
+      font-size: 13px;
+      line-height: 14px;
+    }
+  }
+  .sunshine-progress {
+    .bar {
+      height: 14px;
+      position: relative;
+      .dot {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        margin-left: -4px;
+        z-index: 30;
+        &:nth-child(1) {
+          left: 0;
+        }
+        &:nth-child(2) {
+          left: 25%;
+        }
+        &:nth-child(3) {
+          left: 50%;
+        }
+        &:nth-child(4) {
+          left: 75%;
+        }
+        &:nth-child(5) {
+          left: 100%;
+        }
+        .level {
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-radius: 8px;
+          background: #a5a5a5;
+          text-indent: -9999px;
+          z-index: 10;
+          &.active {
+            background: #dd081c;
+            border: 3px solid #f49c00;
+            margin-top: -3px;
+            box-sizing: content-box;
+          }
+        }
+      }
+      &::after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid #d1d1d1;
+        position: absolute;
+        top: 50%;
+        margin-top: 3px;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  .icons {
+    p {
+      font-size: 13px;
+    }
+    .thumbnails {
+      .thumbnail {
+        width: 100px;
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .expert {
+    width: 46%;
+    height: calc(216px + 18px);
+    border: 1px solid #dbdbdb;
+    .wrap {
+      padding: 30px;
+      h3 {
+        margin-bottom: 20px;
+        padding: 15px 0 15px 80px;
+        font-size: 31px;
+        letter-spacing: 3px;
+        font-family: "Noto Serif JP", serif;
+        background: url(../assets/images/avatar.svg) no-repeat 0 50%;
+        span {
+          font-size: 18px;
+        }
+      }
+      p {
+        font-size: 13px;
+        line-height: 2em;
+      }
+    }
+  }
+  .notes {
+    padding: 30px 0;
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    p {
+      font-size: 13px;
+      line-height: 2em;
+    }
+  }
+}
+
 .related-items {
   max-width: 1020px;
   margin: 0 auto;
@@ -484,47 +802,3 @@ section.info {
   }
 }
 </style>
-
-<script>
-// @ is an alias to /src
-import NavBar from "@/components/NavBar.vue";
-import Footer from "@/components/Footer.vue";
-import { Swiper, SwiperSlide } from "swiper/vue";
-import SwiperCore, { Navigation, Thumbs } from "swiper";
-
-// install Swiper modules
-SwiperCore.use([Navigation, Thumbs]);
-
-export default {
-  name: "Product",
-  components: {
-    NavBar,
-    Swiper,
-    SwiperSlide,
-    Footer,
-  },
-  data() {
-    return {
-      thumbsSwiper: null,
-      Product: [
-        {
-          id: 1,
-          amount: 1,
-          category: ["haconiwa", "盆栽"],
-          size: ["器H=5.5cm　W=14cm", "植物　H=17.5 W=31"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
-          title: "盆栽　五葉松",
-          description: "美しく完成された五葉松",
-          price: 220000,
-        },
-      ],
-    };
-  },
-  methods: {
-    setThumbsSwiper(swiper) {
-      this.thumbsSwiper = swiper;
-    },
-  },
-};
-</script>
