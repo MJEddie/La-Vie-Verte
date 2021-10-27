@@ -272,7 +272,7 @@
               >
                 <div class="card h-100 border-0">
                   <img
-                    :src="item.url"
+                    :src="item.thumbnail"
                     class="card-img-top"
                     alt=""
                     @click="toProduct(item.id)"
@@ -301,7 +301,7 @@
               >
                 <div class="col-md-4">
                   <img
-                    :src="item.url"
+                    :src="item.thumbnail"
                     alt=""
                     class="w-100"
                     @click="toProduct(item.id)"
@@ -429,98 +429,7 @@ export default {
       viewMode: "thumbnail",
       prevPageToken: false,
       filterItems: [],
-      productList: [
-        {
-          id: 1,
-          amount: 1,
-          category: ["箱庭", "盆景"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
-          title: "盆栽　五葉松",
-          description: "美しく完成された五葉松",
-          price: 220000,
-        },
-        {
-          id: 2,
-          amount: 0,
-          category: ["箱庭", "ひととき", "盆栽"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/01211129_5c452e9d515cc.jpg",
-          title: "盆栽　紫杜松",
-          description: "美しい葉色の紫杜松",
-          price: 4400,
-        },
-        {
-          id: 3,
-          amount: 1,
-          category: ["部屋木", "箱庭", "迷你盆景", "觀葉植物"],
-          title: "蕎麦猪口　ポトス・エンジョイ",
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02051345_5c5914f25352b.jpg",
-          description: "爽やかな蕎麦猪口と爽やかなエンジョイを合わせました",
-          price: 2200,
-        },
-        {
-          id: 4,
-          amount: 1,
-          category: ["箱庭", "盆栽"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
-          title: "盆栽　五葉松",
-          description: "美しく完成された五葉松",
-          price: 220000,
-        },
-        {
-          id: 5,
-          amount: 1,
-          category: ["箱庭", "ひととき", "盆栽"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/01211129_5c452e9d515cc.jpg",
-          title: "盆栽　紫杜松",
-          description: "美しい葉色の紫杜松",
-          price: 4400,
-        },
-        {
-          id: 6,
-          amount: 0,
-          category: ["部屋木", "箱庭", "迷你盆景", "觀葉植物"],
-          title: "蕎麦猪口　ポトス・エンジョイ",
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02051345_5c5914f25352b.jpg",
-          description: "爽やかな蕎麦猪口と爽やかなエンジョイを合わせました",
-          price: 2200,
-        },
-        {
-          id: 7,
-          amount: 1,
-          category: ["箱庭", "盆栽"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
-          title: "盆栽　五葉松",
-          description: "美しく完成された五葉松",
-          price: 220000,
-        },
-        {
-          id: 8,
-          amount: 1,
-          category: ["箱庭", "ひととき", "盆栽"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/01211129_5c452e9d515cc.jpg",
-          title: "盆栽　紫杜松",
-          description: "美しい葉色の紫杜松",
-          price: 4400,
-        },
-        {
-          id: 9,
-          amount: 1,
-          category: ["部屋木", "箱庭", "迷你盆景", "觀葉植物"],
-          title: "蕎麦猪口　ポトス・エンジョイ",
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02051345_5c5914f25352b.jpg",
-          description: "爽やかな蕎麦猪口と爽やかなエンジョイを合わせました",
-          price: 2200,
-        },
-      ],
+      productList: [],
     };
   },
   mounted() {
@@ -528,6 +437,7 @@ export default {
       .get("http://localhost:3000/products")
       .then((res) => {
         console.log(res.data);
+        this.productList = res.data;
       })
       .catch((err) => {
         console.warn(err);
