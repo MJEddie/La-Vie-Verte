@@ -114,7 +114,7 @@
         <div class="row container-xl d-flex justify-content-evenly">
           <div
             class="col-sm-6 col-md-3"
-            v-for="item in weekItems"
+            v-for="item in weekSpecial"
             :key="item.id"
           >
             <div class="card h-100 border-0">
@@ -177,13 +177,13 @@
 
     <div class="recommend container mb-5">
       <h2 class="title text-center">
-        ピックアップ<br />
+        RECOMMEND<br />
         <span class="subtitle">Pick Up</span>
       </h2>
       <div class="row d-flex flex-row justify-content-evenly">
         <div
           class="col-sm-6 col-md-3 px-2"
-          v-for="item in rankItems"
+          v-for="item in recommendItems"
           :key="item.id"
         >
           <div class="card h-100 border-0">
@@ -245,7 +245,7 @@ export default {
     return {
       weekSpecial: [],
       newArrivals: [],
-      rankItems: [],
+      recommendItems: [],
     };
   },
   mounted() {
@@ -253,14 +253,14 @@ export default {
       .all([
         this.getWeekItems(),
         this.getNewArrivalsItems(),
-        this.getRankItems(),
+        this.getRecommendItems(),
       ])
       .then(
-        this.axios.spread((WeekItems, NewArrivals, RankItems) => {
-          console.log(WeekItems, NewArrivals, RankItems);
+        this.axios.spread((WeekItems, NewArrivals, RecommendItems) => {
+          console.log(WeekItems, NewArrivals, RecommendItems);
           this.weekSpecial = WeekItems.data;
           this.newArrivals = NewArrivals.data;
-          this.rankItems = RankItems.data;
+          this.recommendItems = RecommendItems.data;
         })
       )
       .catch((err) => {
@@ -274,8 +274,8 @@ export default {
     getNewArrivalsItems() {
       return this.axios.get("http://localhost:3000/new");
     },
-    getRankItems() {
-      return this.axios.get("http://localhost:3000/rank");
+    getRecommendItems() {
+      return this.axios.get("http://localhost:3000/recommend");
     },
   },
 };
