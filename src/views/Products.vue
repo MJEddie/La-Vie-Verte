@@ -454,12 +454,12 @@ export default {
       this.viewMode = event.target.className;
     },
     searchProduct() {
+      let searchProduct = [];
       this.productList = this.productList.filter(
         (item) => item.type == this.filterItems
       );
       // this.productList = searchItems;
-      console.log(this.filterItems, this.searchItems);
-      return this.productList;
+      console.log(this.filterItems, searchProduct);
     },
     tagFlag(tag) {
       if (tag === "部木屋") {
