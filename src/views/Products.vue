@@ -240,7 +240,11 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-black w-100">
+            <button
+              type="submit"
+              class="btn btn-black w-100"
+              @click="searchProduct"
+            >
               SEARCH
             </button>
           </div>
@@ -311,11 +315,12 @@
                   <div class="card-body pt-0">
                     <h4 class="card-title mb-4 pb-3">{{ item.title }}</h4>
                     <ul class="category ps-0">
-                      <li class="d-inline-block">
-                        <span class="s-icon02">{{ item.category[0] }}</span>
-                      </li>
-                      <li class="d-inline-block">
-                        <span>{{ item.category[1] }}</span>
+                      <li
+                        class="d-inline-block"
+                        v-for="(tag, index) in item.tag"
+                        :key="index"
+                      >
+                        <span :class="tagFlag(tag)">{{ tag }}</span>
                       </li>
                     </ul>
                     <p class="description">{{ item.description }}</p>
@@ -430,6 +435,7 @@ export default {
       prevPageToken: false,
       filterItems: [],
       productList: [],
+      searchItems: [],
     };
   },
   mounted() {
@@ -446,6 +452,23 @@ export default {
   methods: {
     switchMode(event) {
       this.viewMode = event.target.className;
+    },
+    searchProduct() {
+      this.productList = this.productList.filter(
+        (item) => item.type == this.filterItems
+      );
+      // this.productList = searchItems;
+      console.log(this.filterItems, this.searchItems);
+      return this.productList;
+    },
+    tagFlag(tag) {
+      if (tag === "部木屋") {
+        return "s-icon01";
+      } else if (tag === "箱庭") {
+        return "s-icon02";
+      } else if (tag === "禮物") {
+        return "s-icon03";
+      }
     },
     toProduct(id) {
       console.log(id);
