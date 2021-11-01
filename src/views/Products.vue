@@ -243,7 +243,7 @@
             <button
               type="submit"
               class="btn btn-black w-100"
-              @click="searchProduct"
+              @click="filterProducts"
             >
               SEARCH
             </button>
@@ -271,7 +271,7 @@
             >
               <div
                 class="thumbnail col"
-                v-for="item in productList"
+                v-for="item in activeProductList"
                 :key="item.id"
               >
                 <div class="card h-100 border-0">
@@ -300,7 +300,7 @@
             <div class="card mb-3 w-100 border-0" v-else>
               <div
                 class="list row g-0"
-                v-for="item in productList"
+                v-for="item in activeProductList"
                 :key="item.id"
               >
                 <div class="col-md-4">
@@ -435,7 +435,7 @@ export default {
       prevPageToken: false,
       filterItems: [],
       productList: [],
-      searchItems: [],
+      activeProductList: [],
     };
   },
   mounted() {
@@ -444,6 +444,7 @@ export default {
       .then((res) => {
         console.log(res.data);
         this.productList = res.data;
+        this.activeProductList = res.data;
       })
       .catch((err) => {
         console.warn(err);
@@ -453,13 +454,20 @@ export default {
     switchMode(event) {
       this.viewMode = event.target.className;
     },
-    searchProduct() {
-      let searchProduct = [];
-      this.productList = this.productList.filter(
-        (item) => item.type == this.filterItems
-      );
-      // this.productList = searchItems;
-      console.log(this.filterItems, searchProduct);
+    filterProducts() {
+      const result = [];
+      const filters = this.filterItems;
+
+      this.productList.forEach(function (product) {
+        function productFilter(filter) {
+          return product.type.indexOf(filter) != -1;
+        }
+        if (filters.every(productFilter)) {
+          result.push(product);
+        }
+      });
+      console.log(result);
+      this.activeProductList = result;
     },
     tagFlag(tag) {
       if (tag === "部木屋") {
