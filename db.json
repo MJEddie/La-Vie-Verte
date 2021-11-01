@@ -49,7 +49,7 @@
         },
         {
             "id": 5,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": "盆景",
             "thumbnail": "https://i.imgur.com/JHgOnjb.jpg",
             "title": "盆景　真柏",
@@ -73,7 +73,7 @@
         },
         {
             "id": 7,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": "迷你盆景",
             "thumbnail": "https://i.imgur.com/y3Ek89C.jpg",
             "title": "迷你盆景　火棘",
@@ -85,7 +85,7 @@
         },
         {
             "id": 8,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": "迷你盆景",
             "thumbnail": "https://i.imgur.com/FRJ3gyP.jpg",
             "title": "迷你盆景　紅楓",
@@ -97,7 +97,7 @@
         },
         {
             "id": 9,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": "迷你盆景",
             "thumbnail": "https://i.imgur.com/bNGE03J.jpg",
             "title": "迷你盆景　八房香丁木",
@@ -109,7 +109,7 @@
         },
         {
             "id": 10,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": "迷你盆景",
             "thumbnail": "https://i.imgur.com/jcZdMxu.jpg",
             "title": "迷你盆景　女貞",
@@ -121,7 +121,7 @@
         },
         {
             "id": 11,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": "迷你盆景",
             "thumbnail": "https://i.imgur.com/UzyNzJT.jpg",
             "title": "迷你盆景　台灣山椒",
@@ -225,7 +225,7 @@
             "size": "medium",
             "price": 9900,
             "amount": 7,
-            "tag": ["部木屋", "禮物", "塊根植物"]
+            "tag": ["部木屋", "禮物", "塊根植物", "多肉植物"]
         },
         {
             "id": 20,
@@ -330,10 +330,10 @@
             "thumbnail": "https://i.imgur.com/OiJJPlT.jpg",
             "title": "白金葛　喜悅黃金葛",
             "description": "盆栽和植物清爽的組合",
-            "size": 15,
+            "size": "S",
             "price": 2200,
             "amount": 10,
-            "tag": ["部木屋", "禮物", "觀葉植物"]
+            "tag": ["部木屋", "禮物", "迷你盆景", "觀葉植物"]
         },
         {
             "id": 29,
@@ -422,7 +422,7 @@
             "size": "medium",
             "price": 11000,
             "amount": 10,
-            "tag": ["部木屋", "禮物", "觀葉植物"]
+            "tag": ["部木屋", "禮物", "迷你盆景", "觀葉植物"]
         },
         {
             "id": 36,
@@ -435,7 +435,7 @@
             "size": "medium",
             "price": 5720,
             "amount": 10,
-            "tag": ["部木屋", "禮物", "盆景", "觀葉植物"]
+            "tag": ["部木屋", "禮物", "迷你盆景", "觀葉植物"]
         },
         {
             "id": 37,
@@ -452,7 +452,7 @@
         },
         {
             "id": 38,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": ["盆景", "迷你盆景"],
             "thumbnail": "https://i.imgur.com/KB6Zz9B.jpg",
             "title": "盆景　豆金柑",
@@ -465,7 +465,7 @@
         {
             "id": 39,
             "category": ["部木屋", "禮物"],
-            "type": ["塊根植物"],
+            "type": "塊根植物",
             "thumbnail": "https://i.imgur.com/2DnD8Dh.jpg",
             "title": "象腳　龜甲龍",
             "description": "與盆器完美結合，擁有端莊亮麗的外觀",
@@ -476,7 +476,7 @@
         },
         {
             "id": 40,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": ["盆景", "迷你盆景"],
             "thumbnail": "https://i.imgur.com/JT9zRG4.jpg",
             "title": "嚴選　八房香丁木 SAGA02",
@@ -488,7 +488,7 @@
         },
         {
             "id": 41,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": ["盆景", "迷你盆景"],
             "thumbnail": "https://i.imgur.com/gKqD68T.jpg",
             "title": "嚴選　八房香丁木 COSMO",
@@ -563,7 +563,7 @@
             "size": "medium",
             "price": 11000,
             "amount": 10,
-            "tag": ["部木屋", "禮物", "觀葉植物"]
+            "tag": ["部木屋", "禮物", "迷你盆景", "觀葉植物"]
         },
         {
             "id": 36,
@@ -576,7 +576,7 @@
             "size": "medium",
             "price": 5720,
             "amount": 10,
-            "tag": ["部木屋", "禮物", "盆景", "觀葉植物"]
+            "tag": ["部木屋", "禮物", "迷你盆景", "觀葉植物"]
         },
         {
             "id": 37,
@@ -607,7 +607,7 @@
     ],
     "recommend": [{
             "id": 38,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": ["盆景", "迷你盆景"],
             "thumbnail": "https://i.imgur.com/KB6Zz9B.jpg",
             "title": "盆景　豆金柑",
@@ -620,7 +620,7 @@
         {
             "id": 39,
             "category": ["部木屋", "禮物"],
-            "type": ["塊根植物"],
+            "type": "塊根植物",
             "thumbnail": "https://i.imgur.com/2DnD8Dh.jpg",
             "title": "象腳　龜甲龍",
             "description": "與盆器完美結合，擁有端莊亮麗的外觀",
@@ -631,7 +631,7 @@
         },
         {
             "id": 40,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": ["盆景", "迷你盆景"],
             "thumbnail": "https://i.imgur.com/JT9zRG4.jpg",
             "title": "嚴選　八房香丁木 SAGA02",
@@ -643,7 +643,7 @@
         },
         {
             "id": 41,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": ["盆景", "迷你盆景"],
             "thumbnail": "https://i.imgur.com/gKqD68T.jpg",
             "title": "嚴選　八房香丁木 COSMO",
