@@ -35,11 +35,11 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="部屋木"
-                    v-model="filterItems"
+                    value="部木屋"
+                    v-model="categoryFilter"
                   />
-                  <label class="form-check-label s-icon01" for="部屋木"
-                    >部屋木</label
+                  <label class="form-check-label s-icon01" for="部木屋"
+                    >部木屋</label
                   >
                 </div>
                 <div class="form-check mb-1">
@@ -47,7 +47,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="箱庭"
-                    v-model="filterItems"
+                    v-model="categoryFilter"
                   />
                   <label class="form-check-label s-icon02" for="箱庭"
                     >箱庭</label
@@ -58,7 +58,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="禮物"
-                    v-model="filterItems"
+                    v-model="categoryFilter"
                   />
                   <label class="form-check-label s-icon03" for="禮物"
                     >禮物</label
@@ -77,7 +77,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="盆景"
-                    v-model="filterItems"
+                    v-model="typeFilter"
                   />
                   <label class="form-check-label" for="盆景">盆景</label>
                 </div>
@@ -86,7 +86,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="迷你盆景"
-                    v-model="filterItems"
+                    v-model="typeFilter"
                   />
                   <label class="form-check-label" for="迷你盆景"
                     >迷你盆景</label
@@ -97,7 +97,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="多肉植物"
-                    v-model="filterItems"
+                    v-model="typeFilter"
                   />
                   <label class="form-check-label" for="多肉植物"
                     >多肉植物</label
@@ -108,7 +108,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="塊根植物"
-                    v-model="filterItems"
+                    v-model="typeFilter"
                   />
                   <label class="form-check-label" for="塊根植物"
                     >塊根植物</label
@@ -119,7 +119,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="觀葉植物"
-                    v-model="filterItems"
+                    v-model="typeFilter"
                   />
                   <label class="form-check-label" for="觀葉植物"
                     >觀葉植物</label
@@ -433,7 +433,8 @@ export default {
     return {
       viewMode: "thumbnail",
       prevPageToken: false,
-      filterItems: [],
+      categoryFilter: [],
+      typeFilter: [],
       productList: [],
       activeProductList: [],
     };
@@ -456,13 +457,20 @@ export default {
     },
     filterProducts() {
       const result = [];
-      const filters = this.filterItems;
+      const categoryFilters = this.categoryFilter;
+      const typeFilters = this.typeFilter;
 
       this.productList.forEach(function (product) {
-        function productFilter(filter) {
+        function productCategoryFilter(filter) {
+          return product.category.indexOf(filter) != -1;
+        }
+        function productTypeFilter(filter) {
           return product.type.indexOf(filter) != -1;
         }
-        if (filters.every(productFilter)) {
+        if (
+          categoryFilters.every(productCategoryFilter) &
+          typeFilters.every(productTypeFilter)
+        ) {
           result.push(product);
         }
       });
