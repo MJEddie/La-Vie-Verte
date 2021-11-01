@@ -6,6 +6,7 @@
             "thumbnail": "https://i.imgur.com/qxwLHXO.jpg",
             "title": "盆景　五葉松",
             "description": "精美完成的五葉松",
+            "size": "medium",
             "price": 220000,
             "amount": 0,
             "tag": ["禮物", "箱庭", "盆景"]
@@ -17,6 +18,7 @@
             "thumbnail": "https://i.imgur.com/VRjlhWV.jpg",
             "title": "盆景　紫杜松",
             "description": "美麗的葉色紫杜松",
+            "size": "small",
             "price": 4400,
             "amount": 5,
             "tag": ["箱庭", "禮物", "盆景"]
@@ -28,17 +30,19 @@
             "thumbnail": "https://i.imgur.com/UYnMR3F.jpg",
             "title": "盆景　真柏 No.5",
             "description": "外形極好的真柏",
+            "size": "small",
             "price": 105600,
             "amount": 3,
             "tag": ["箱庭", "禮物", "盆景"]
         },
         {
             "id": 4,
-            "category": ["箱庭"],
+            "category": "箱庭",
             "type": "盆景",
             "thumbnail": "https://i.imgur.com/8OvycMd.jpg",
             "title": "盆景　石化檜 No.3",
             "description": "稍大型尺寸感的石化檜",
+            "size": "small",
             "price": 88000,
             "amount": 5,
             "tag": ["箱庭", "盆景"]
@@ -50,9 +54,10 @@
             "thumbnail": "https://i.imgur.com/JHgOnjb.jpg",
             "title": "盆景　真柏",
             "description": "盆景的王道真柏，是非常美麗的一種盆景。",
+            "size": "medium",
             "price": 165000,
             "amount": 0,
-            "tag": ["箱庭", "盆栽"]
+            "tag": ["箱庭", "盆景"]
         },
         {
             "id": 6,
@@ -61,6 +66,7 @@
             "thumbnail": "https://i.imgur.com/hflIxTq.jpg",
             "title": "盆景　黒松",
             "description": "富有魅力的黑松盆景",
+            "size": "small",
             "price": 15400,
             "amount": 10,
             "tag": ["箱庭", "禮物", "盆景"]
@@ -72,6 +78,7 @@
             "thumbnail": "https://i.imgur.com/y3Ek89C.jpg",
             "title": "迷你盆景　火棘",
             "description": "小而可愛的火棘",
+            "size": "small",
             "price": 4950,
             "amount": 10,
             "tag": ["箱庭", "迷你盆景"]
@@ -83,6 +90,7 @@
             "thumbnail": "https://i.imgur.com/FRJ3gyP.jpg",
             "title": "迷你盆景　紅楓",
             "description": "新迷你盆景楓葉",
+            "size": "small",
             "price": 4180,
             "amount": 20,
             "tag": ["箱庭", "迷你盆景"]
@@ -94,6 +102,7 @@
             "thumbnail": "https://i.imgur.com/bNGE03J.jpg",
             "title": "迷你盆景　八房香丁木",
             "description": "葉子細小，枝條細細分開，即使很小也有大樹的感覺。",
+            "size": "small",
             "price": 3520,
             "amount": 20,
             "tag": ["箱庭", "迷你盆景"]
@@ -105,6 +114,7 @@
             "thumbnail": "https://i.imgur.com/jcZdMxu.jpg",
             "title": "迷你盆景　女貞",
             "description": "獨具個性的樹形",
+            "size": "small",
             "price": 6270,
             "amount": 15,
             "tag": ["箱庭", "迷你盆景"]
@@ -116,6 +126,7 @@
             "thumbnail": "https://i.imgur.com/UzyNzJT.jpg",
             "title": "迷你盆景　台灣山椒",
             "description": "它是一種罕見的盆景品種，產量有限。",
+            "size": "small",
             "price": 4070,
             "amount": 15,
             "tag": ["箱庭", "迷你盆景"]
@@ -127,6 +138,7 @@
             "thumbnail": "https://i.imgur.com/9Vn6SbN.jpg",
             "title": "迷你盆景　黄金姫花月",
             "description": "栽在信樂燒器皿中傾斜樹幹的黄金姫花月",
+            "size": "medium",
             "price": 4950,
             "amount": 9,
             "tag": ["部木屋", "禮物", "迷你盆景", "多肉植物"]
@@ -138,6 +150,7 @@
             "thumbnail": "https://i.imgur.com/7BCt7GE.jpg",
             "title": "多肉植物　矮人節",
             "description": "變成樹木的多肉植物",
+            "size": "small",
             "price": 3300,
             "amount": 7,
             "tag": ["部木屋", "箱庭", "多肉植物"]
@@ -149,6 +162,7 @@
             "thumbnail": "https://i.imgur.com/G1Ergu3.jpg",
             "title": "多肉植物　景天",
             "description": "長滿細毛的可愛景天",
+            "size": "small",
             "price": 3300,
             "amount": 7,
             "tag": ["部木屋", "箱庭", "多肉植物"]
@@ -160,6 +174,7 @@
             "thumbnail": "https://i.imgur.com/b73wgtj.jpg",
             "title": "多肉植物　孔雀之舞",
             "description": "透過扦插的繁殖方式增加個體",
+            "size": "small",
             "price": 3850,
             "amount": 5,
             "tag": ["部木屋", "箱庭", "多肉植物"]
@@ -171,6 +186,7 @@
             "thumbnail": "https://i.imgur.com/53esJSx.jpg",
             "title": "多肉植物　銀烏帽子",
             "description": "一頂銀色的烏木帽，帶有柔和的銀色刺，看起來像柔軟的頭髮",
+            "size": "medium",
             "price": 3300,
             "amount": 5,
             "tag": ["部木屋", "禮物", "多肉植物"]
@@ -182,6 +198,7 @@
             "thumbnail": "https://i.imgur.com/mrGebZU.jpg",
             "title": "蒙維利亞雪峰　仙人掌",
             "description": "猶如飄落在高雅粗獷的山峰上的積雪",
+            "size": "small",
             "price": 7150,
             "amount": 0,
             "tag": ["部木屋", "禮物", "多肉植物"]
@@ -193,6 +210,7 @@
             "thumbnail": "https://i.imgur.com/7fj1vVb.jpg",
             "title": "龍舌蘭　笹之雪",
             "description": "厚葉搭配葉片上的白色細紋讓人愛不釋手",
+            "size": "small",
             "price": 22000,
             "amount": 5,
             "tag": ["部木屋", "禮物", "多肉植物"]
@@ -200,10 +218,11 @@
         {
             "id": 19,
             "category": ["部木屋", "禮物"],
-            "type": "塊根植物",
+            "type": ["塊根植物", "多肉植物"],
             "thumbnail": "https://i.imgur.com/B6t0uci.jpg",
             "title": "夾竹桃葉仙人筆",
             "description": "帶來好運的猴子樹",
+            "size": "medium",
             "price": 9900,
             "amount": 7,
             "tag": ["部木屋", "禮物", "塊根植物"]
@@ -215,6 +234,7 @@
             "thumbnail": "https://i.imgur.com/TqodBkO.jpg",
             "title": "塊根植物　象牙宮",
             "description": "受歡迎的類型，以白馬城的名義流傳",
+            "size": "small",
             "price": 27500,
             "amount": 1,
             "tag": ["部木屋", "禮物", "塊根植物"]
@@ -226,6 +246,7 @@
             "thumbnail": "https://i.imgur.com/k0Lcu6d.jpg",
             "title": "非洲　霸王樹",
             "description": "一種非常罕見的無刺類型",
+            "size": "small",
             "price": 61600,
             "amount": 0,
             "tag": ["部木屋", "禮物", "塊根植物"]
@@ -237,6 +258,7 @@
             "thumbnail": "https://i.imgur.com/Vufg8ay.jpg",
             "title": "大㦸科　鬼棲閣",
             "description": "來自馬馬達加斯加西北部的稀有物種",
+            "size": "medium",
             "price": 198000,
             "amount": 0,
             "tag": ["部木屋", "禮物", "塊根植物"]
@@ -248,6 +270,7 @@
             "thumbnail": "https://i.imgur.com/1Qt1LOW.jpg",
             "title": "沙漠　蘇木",
             "description": "日式古樹風格的塊根植物",
+            "size": "medium",
             "price": 88000,
             "amount": 1,
             "tag": ["部木屋", "禮物", "塊根植物"]
@@ -259,39 +282,43 @@
             "thumbnail": "https://i.imgur.com/T5e7slK.jpg",
             "title": "蘇鐵大戟　鐵甲丸",
             "description": "相當稀有的略大株鐵甲丸",
+            "size": "medium",
             "price": 58300,
             "amount": 0,
             "tag": ["部木屋", "禮物", "塊根植物"]
         },
         {
             "id": 25,
-            "category": ["部木屋"],
+            "category": "部木屋",
             "type": "觀葉植物",
             "thumbnail": "https://i.imgur.com/on3GAWY.jpg",
             "title": "天堂鳥　鶴望蘭",
             "description": "有著迷人大葉子的鶴望蘭",
+            "size": "extra large",
             "price": 41800,
             "amount": 0,
             "tag": ["部木屋", "觀葉植物"]
         },
         {
             "id": 26,
-            "category": ["部木屋"],
+            "category": "部木屋",
             "type": "觀葉植物",
             "thumbnail": "https://i.imgur.com/kYIgnn6.jpg",
             "title": "傘榕　愛心榕",
             "description": "枝繁葉茂的愛心榕",
+            "size": "extra large",
             "price": 41800,
             "amount": 4,
             "tag": ["部木屋", "觀葉植物"]
         },
         {
             "id": 27,
-            "category": ["部木屋"],
+            "category": "部木屋",
             "type": "觀葉植物",
             "thumbnail": "https://i.imgur.com/SBUTMB2.jpg",
             "title": "鵝掌柴  No.10",
             "description": "具有強大存在感的鵝掌柴",
+            "size": "extra large",
             "price": 46200,
             "amount": 3,
             "tag": ["部木屋", "觀葉植物"]
@@ -299,10 +326,11 @@
         {
             "id": 28,
             "category": ["部木屋", "禮物"],
-            "type": "觀葉植物",
+            "type": ["迷你盆景", "觀葉植物"],
             "thumbnail": "https://i.imgur.com/OiJJPlT.jpg",
             "title": "白金葛　喜悅黃金葛",
             "description": "盆栽和植物清爽的組合",
+            "size": 15,
             "price": 2200,
             "amount": 10,
             "tag": ["部木屋", "禮物", "觀葉植物"]
@@ -314,6 +342,7 @@
             "thumbnail": "https://i.imgur.com/XYXKHM8.jpg",
             "title": "亞當的針　花葉絲蘭",
             "description": "美麗的花葉絲蘭",
+            "size": "medium",
             "price": 33000,
             "amount": 8,
             "tag": ["部木屋", "禮物", "觀葉植物"]
@@ -325,6 +354,7 @@
             "thumbnail": "https://i.imgur.com/uM7aX6j.jpg",
             "title": "流血之樹　龍血樹",
             "description": "盆景狀的龍血樹",
+            "size": "medium",
             "price": 16500,
             "amount": 3,
             "tag": ["部木屋", "禮物", "觀葉植物"]
@@ -337,6 +367,7 @@
             "title": "晃玉  布紋球",
             "subtitle": "由專家創造的獨特方式",
             "description": "體型小，但擁有美麗色彩和型態的個體",
+            "size": "small",
             "price": 11000,
             "amount": 10,
             "tag": ["禮物", "箱庭", "塊根植物", "多肉植物"]
@@ -349,6 +380,7 @@
             "title": "神玉  萬青玉",
             "subtitle": "一株一株的存在感",
             "description": "罕見的對稱性植物，與晃玉非常相似",
+            "size": "medium",
             "price": 46200,
             "amount": 10,
             "tag": ["禮物", "箱庭", "塊根植物", "多肉植物"]
@@ -361,6 +393,7 @@
             "title": "颯貝大戟群生群",
             "subtitle": "令人驚嘆的球形群體",
             "description": "非常漂亮的群生群",
+            "size": "small",
             "price": 115500,
             "amount": 10,
             "tag": ["禮物", "箱庭", "塊根植物"]
@@ -373,6 +406,7 @@
             "title": "十二卷屬  姬玉露",
             "subtitle": "水滴般的美麗葉子",
             "description": "帶有美麗窗戶的沙漠寶石",
+            "size": "small",
             "price": 4620,
             "amount": 10,
             "tag": ["禮物", "部木屋", "多肉植物"]
@@ -380,11 +414,12 @@
         {
             "id": 35,
             "category": ["部木屋", "禮物"],
-            "type": "觀葉植物",
+            "type": ["迷你盆景", "觀葉植物"],
             "thumbnail": "https://i.imgur.com/TZNb4CB.jpg",
             "title": "瓶樹",
             "subtitle": "隨著生長，變成了一個酒瓶的形狀",
             "description": "隨著生長，變成了一個酒瓶的形狀",
+            "size": "medium",
             "price": 11000,
             "amount": 10,
             "tag": ["部木屋", "禮物", "觀葉植物"]
@@ -392,11 +427,12 @@
         {
             "id": 36,
             "category": ["部木屋", "禮物"],
-            "type": ["盆景", "觀葉植物"],
+            "type": ["迷你盆景", "觀葉植物"],
             "thumbnail": "https://i.imgur.com/eB9neim.jpg",
             "title": "盆景  槐花",
             "subtitle": "盆景型式的槐花",
             "description": "象徵平靜的春雨的槐花",
+            "size": "medium",
             "price": 5720,
             "amount": 10,
             "tag": ["部木屋", "禮物", "盆景", "觀葉植物"]
@@ -409,6 +445,7 @@
             "title": "吉祥樹  南天竹",
             "subtitle": "幸運招財的代表",
             "description": "作為吉祥的代表被重新導入",
+            "size": "medium",
             "price": 7150,
             "amount": 10,
             "tag": ["部木屋", "禮物", "觀葉植物"]
@@ -420,6 +457,7 @@
             "thumbnail": "https://i.imgur.com/KB6Zz9B.jpg",
             "title": "盆景　豆金柑",
             "description": "彩色的金柑",
+            "size": "medium",
             "price": 4950,
             "amount": 9,
             "tag": ["箱庭", "盆景", "迷你盆景"]
@@ -431,6 +469,7 @@
             "thumbnail": "https://i.imgur.com/2DnD8Dh.jpg",
             "title": "象腳　龜甲龍",
             "description": "與盆器完美結合，擁有端莊亮麗的外觀",
+            "size": "small",
             "price": 19580,
             "amount": 9,
             "tag": ["部木屋", "禮物", "塊根植物"]
@@ -442,6 +481,7 @@
             "thumbnail": "https://i.imgur.com/JT9zRG4.jpg",
             "title": "嚴選　八房香丁木 SAGA02",
             "description": "樹木的起伏形狀和盆器 SAGA 的組合，創造了一種粗曠的氛圍",
+            "size": "small",
             "price": 11000,
             "amount": 9,
             "tag": ["箱庭", "盆景", "迷你盆景"]
@@ -453,6 +493,7 @@
             "thumbnail": "https://i.imgur.com/gKqD68T.jpg",
             "title": "嚴選　八房香丁木 COSMO",
             "description": "大樹般的存在感和盆器 COSMO 的美麗層次",
+            "size": "small",
             "price": 14300,
             "amount": 9,
             "tag": ["箱庭", "盆景", "迷你盆景"]
@@ -466,6 +507,7 @@
             "title": "晃玉  布紋球",
             "subtitle": "由專家創造的獨特方式",
             "description": "體型小，但擁有美麗色彩和型態的個體",
+            "size": "small",
             "price": 11000,
             "amount": 10,
             "tag": ["禮物", "箱庭", "塊根植物", "多肉植物"]
@@ -478,6 +520,7 @@
             "title": "神玉  萬青玉",
             "subtitle": "一株一株的存在感",
             "description": "罕見的對稱性植物，與晃玉非常相似",
+            "size": "medium",
             "price": 46200,
             "amount": 10,
             "tag": ["禮物", "箱庭", "塊根植物", "多肉植物"]
@@ -490,6 +533,7 @@
             "title": "颯貝大戟群生群",
             "subtitle": "令人驚嘆的球形群體",
             "description": "非常漂亮的群生群",
+            "size": "small",
             "price": 115500,
             "amount": 10,
             "tag": ["禮物", "箱庭", "塊根植物"]
@@ -502,6 +546,7 @@
             "title": "十二卷屬  姬玉露",
             "subtitle": "水滴般的美麗葉子",
             "description": "帶有美麗窗戶的沙漠寶石",
+            "size": "small",
             "price": 4620,
             "amount": 10,
             "tag": ["禮物", "部木屋", "多肉植物"]
@@ -510,11 +555,12 @@
     "new": [{
             "id": 35,
             "category": ["部木屋", "禮物"],
-            "type": "觀葉植物",
+            "type": ["迷你盆景", "觀葉植物"],
             "thumbnail": "https://i.imgur.com/TZNb4CB.jpg",
             "title": "瓶樹",
             "subtitle": "隨著生長，變成了一個酒瓶的形狀",
             "description": "隨著生長，變成了一個酒瓶的形狀",
+            "size": "medium",
             "price": 11000,
             "amount": 10,
             "tag": ["部木屋", "禮物", "觀葉植物"]
@@ -522,11 +568,12 @@
         {
             "id": 36,
             "category": ["部木屋", "禮物"],
-            "type": ["盆景", "觀葉植物"],
+            "type": ["迷你盆景", "觀葉植物"],
             "thumbnail": "https://i.imgur.com/eB9neim.jpg",
             "title": "盆景  槐花",
             "subtitle": "盆景型式的槐花",
             "description": "象徵平靜的春雨的槐花",
+            "size": "medium",
             "price": 5720,
             "amount": 10,
             "tag": ["部木屋", "禮物", "盆景", "觀葉植物"]
@@ -539,6 +586,7 @@
             "title": "吉祥樹  南天竹",
             "subtitle": "幸運招財的代表",
             "description": "作為吉祥的代表被重新導入",
+            "size": "medium",
             "price": 7150,
             "amount": 10,
             "tag": ["部木屋", "禮物", "觀葉植物"]
@@ -551,6 +599,7 @@
             "title": "迷你盆景　黄金姫花月",
             "subtitle": "黄金姫花月盆栽風",
             "description": "栽在信樂燒器皿中傾斜樹幹的黄金姫花月",
+            "size": "medium",
             "price": 4950,
             "amount": 9,
             "tag": ["部木屋", "禮物", "迷你盆景", "多肉植物"]
@@ -563,6 +612,7 @@
             "thumbnail": "https://i.imgur.com/KB6Zz9B.jpg",
             "title": "盆景　豆金柑",
             "description": "彩色的金柑",
+            "size": "medium",
             "price": 4950,
             "amount": 9,
             "tag": ["箱庭", "盆景", "迷你盆景"]
@@ -574,6 +624,7 @@
             "thumbnail": "https://i.imgur.com/2DnD8Dh.jpg",
             "title": "象腳　龜甲龍",
             "description": "與盆器完美結合，擁有端莊亮麗的外觀",
+            "size": "small",
             "price": 19580,
             "amount": 9,
             "tag": ["部木屋", "禮物", "塊根植物"]
@@ -585,6 +636,7 @@
             "thumbnail": "https://i.imgur.com/JT9zRG4.jpg",
             "title": "嚴選　八房香丁木 SAGA02",
             "description": "樹木的起伏形狀和盆器 SAGA 的組合，創造了一種粗曠的氛圍",
+            "size": "small",
             "price": 11000,
             "amount": 9,
             "tag": ["箱庭", "盆景", "迷你盆景"]
@@ -596,6 +648,7 @@
             "thumbnail": "https://i.imgur.com/gKqD68T.jpg",
             "title": "嚴選　八房香丁木 COSMO",
             "description": "大樹般的存在感和盆器 COSMO 的美麗層次",
+            "size": "small",
             "price": 14300,
             "amount": 9,
             "tag": ["箱庭", "盆景", "迷你盆景"]
