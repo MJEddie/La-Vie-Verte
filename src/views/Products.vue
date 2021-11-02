@@ -76,54 +76,46 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="盆景"
+                    value="N01"
                     v-model="typeFilter"
                   />
-                  <label class="form-check-label" for="盆景">盆景</label>
+                  <label class="form-check-label" for="N01">盆景</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="迷你盆景"
+                    value="N02"
                     v-model="typeFilter"
                   />
-                  <label class="form-check-label" for="迷你盆景"
-                    >迷你盆景</label
-                  >
+                  <label class="form-check-label" for="N02">迷你盆景</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="多肉植物"
+                    value="N03"
                     v-model="typeFilter"
                   />
-                  <label class="form-check-label" for="多肉植物"
-                    >多肉植物</label
-                  >
+                  <label class="form-check-label" for="N03">多肉植物</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="塊根植物"
+                    value="N04"
                     v-model="typeFilter"
                   />
-                  <label class="form-check-label" for="塊根植物"
-                    >塊根植物</label
-                  >
+                  <label class="form-check-label" for="N04">塊根植物</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="觀葉植物"
+                    value="N05"
                     v-model="typeFilter"
                   />
-                  <label class="form-check-label" for="觀葉植物"
-                    >觀葉植物</label
-                  >
+                  <label class="form-check-label" for="N05">觀葉植物</label>
                 </div>
               </div>
               <div class="filter-title fs-6 mb-3 pb-2">
@@ -475,7 +467,6 @@ export default {
           return product.size.indexOf(filter) != -1;
         }
         function productPriceFilter(filter) {
-          console.log(filter, typeof filter);
           switch (filter) {
             case "5000":
               return product.price < 5000;
@@ -492,7 +483,7 @@ export default {
 
         if (
           categoryFilters.every(productCategoryFilter) &
-          typeFilters.every(productTypeFilter) &
+          typeFilters.some(productTypeFilter) &
           sizeFilters.every(productSizeFilter) &
           priceFilters.every(productPriceFilter)
         ) {
