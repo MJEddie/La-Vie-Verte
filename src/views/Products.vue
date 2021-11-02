@@ -138,7 +138,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="small"
-                    v-model="filterItems"
+                    v-model="sizeFilter"
                   />
                   <label class="form-check-label" for="small"
                     >S (15cm 以下)</label
@@ -149,7 +149,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="medium"
-                    v-model="filterItems"
+                    v-model="sizeFilter"
                   />
                   <label class="form-check-label" for="medium"
                     >M (15-59cm)</label
@@ -160,7 +160,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="large"
-                    v-model="filterItems"
+                    v-model="sizeFilter"
                   />
                   <label class="form-check-label" for="large"
                     >L (60-149cm)</label
@@ -171,7 +171,7 @@
                     class="form-check-input"
                     type="checkbox"
                     value="extra large"
-                    v-model="filterItems"
+                    v-model="sizeFilter"
                   />
                   <label class="form-check-label" for="extra large"
                     >XL (150cm 以上)</label
@@ -189,19 +189,19 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="small"
-                    v-model="filterItems"
+                    value="5000"
+                    v-model="priceFilter"
                   />
-                  <label class="form-check-label" for="small">～5000</label>
+                  <label class="form-check-label" for="5000">～5000</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="medium"
-                    v-model="filterItems"
+                    value="10000"
+                    v-model="priceFilter"
                   />
-                  <label class="form-check-label" for="medium"
+                  <label class="form-check-label" for="10000"
                     >5001～10000</label
                   >
                 </div>
@@ -209,10 +209,10 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="large"
-                    v-model="filterItems"
+                    value="20000"
+                    v-model="priceFilter"
                   />
-                  <label class="form-check-label" for="large"
+                  <label class="form-check-label" for="20000"
                     >10001～20000</label
                   >
                 </div>
@@ -220,10 +220,10 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="extra large"
-                    v-model="filterItems"
+                    value="30000"
+                    v-model="priceFilter"
                   />
-                  <label class="form-check-label" for="extra large"
+                  <label class="form-check-label" for="30000"
                     >20001～30000</label
                   >
                 </div>
@@ -231,12 +231,10 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="extra large"
-                    v-model="filterItems"
+                    value="30001"
+                    v-model="priceFilter"
                   />
-                  <label class="form-check-label" for="extra large"
-                    >30001～</label
-                  >
+                  <label class="form-check-label" for="30001">30001～</label>
                 </div>
               </div>
             </div>
@@ -435,6 +433,8 @@ export default {
       prevPageToken: false,
       categoryFilter: [],
       typeFilter: [],
+      sizeFilter: [],
+      priceFilter: [],
       productList: [],
       activeProductList: [],
     };
@@ -459,6 +459,7 @@ export default {
       const result = [];
       const categoryFilters = this.categoryFilter;
       const typeFilters = this.typeFilter;
+      const sizeFilters = this.sizeFilter;
 
       this.productList.forEach(function (product) {
         function productCategoryFilter(filter) {
@@ -467,9 +468,13 @@ export default {
         function productTypeFilter(filter) {
           return product.type.indexOf(filter) != -1;
         }
+        function productSizeFilter(filter) {
+          return product.size.indexOf(filter) != -1;
+        }
         if (
           categoryFilters.every(productCategoryFilter) &
-          typeFilters.every(productTypeFilter)
+          typeFilters.every(productTypeFilter) &
+          sizeFilters.every(productSizeFilter)
         ) {
           result.push(product);
         }
