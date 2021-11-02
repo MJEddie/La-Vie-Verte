@@ -472,9 +472,9 @@ export default {
           return product.size.indexOf(filter) != -1;
         }
         if (
-          categoryFilters.every(productCategoryFilter) &
-          typeFilters.every(productTypeFilter) &
-          sizeFilters.every(productSizeFilter)
+          categoryFilters.some(productCategoryFilter) |
+          typeFilters.some(productTypeFilter) |
+          sizeFilters.some(productSizeFilter)
         ) {
           result.push(product);
         }
