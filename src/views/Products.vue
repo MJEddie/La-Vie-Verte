@@ -285,7 +285,9 @@
                     </h5>
                     <p class="card-text">
                       售價
-                      <span class="price fs-6">&#36; {{ item.price }}</span>
+                      <span class="price fs-6"
+                        >&#36; {{ priceFormat(item.price) }}</span
+                      >
                       <span class="sold text-danger ms-2" v-if="!item.amount"
                         >Sold Out</span
                       >
@@ -323,7 +325,7 @@
                     </ul>
                     <p class="description">{{ item.description }}</p>
                     <p class="price fw-bold">
-                      售價 <span>&#36; {{ item.price }}</span>
+                      售價 <span>&#36; {{ priceFormat(item.price) }}</span>
                     </p>
                     <div
                       class="btn-group w-100"
@@ -473,23 +475,21 @@ export default {
           return product.size.indexOf(filter) != -1;
         }
         function productPriceFilter(filter) {
+          console.log(filter, typeof filter);
           switch (filter) {
             case "5000":
               return product.price < 5000;
-
             case "10000":
               return product.price > 5000 && product.price < 10001;
-
             case "20000":
               return product.price > 10000 && product.price < 20001;
-
             case "30000":
               return product.price > 20000 && product.price < 30001;
-
             case "30001":
               return product.price > 30001;
           }
         }
+
         if (
           categoryFilters.every(productCategoryFilter) &
           typeFilters.every(productTypeFilter) &
@@ -501,6 +501,18 @@ export default {
       });
       console.log(result);
       this.activeProductList = result;
+    },
+    priceFormat(price) {
+      let result = "";
+      (price = (price || 0).toString()), (result = "");
+      while (price.length > 3) {
+        result = "," + price.slice(-3) + result;
+        price = price.slice(0, price.length - 3);
+      }
+      if (price) {
+        result = price + result;
+      }
+      return result;
     },
     tagFlag(tag) {
       if (tag === "部木屋") {
