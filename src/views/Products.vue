@@ -460,6 +460,7 @@ export default {
       const categoryFilters = this.categoryFilter;
       const typeFilters = this.typeFilter;
       const sizeFilters = this.sizeFilter;
+      const priceFilters = this.priceFilter;
 
       this.productList.forEach(function (product) {
         function productCategoryFilter(filter) {
@@ -471,10 +472,29 @@ export default {
         function productSizeFilter(filter) {
           return product.size.indexOf(filter) != -1;
         }
+        function productPriceFilter(filter) {
+          switch (filter) {
+            case "5000":
+              return product.price < 5000;
+
+            case "10000":
+              return product.price > 5000 && product.price < 10001;
+
+            case "20000":
+              return product.price > 10000 && product.price < 20001;
+
+            case "30000":
+              return product.price > 20000 && product.price < 30001;
+
+            case "30001":
+              return product.price > 30001;
+          }
+        }
         if (
-          categoryFilters.some(productCategoryFilter) |
-          typeFilters.some(productTypeFilter) |
-          sizeFilters.some(productSizeFilter)
+          categoryFilters.every(productCategoryFilter) &
+          typeFilters.every(productTypeFilter) &
+          sizeFilters.every(productSizeFilter) &
+          priceFilters.every(productPriceFilter)
         ) {
           result.push(product);
         }
