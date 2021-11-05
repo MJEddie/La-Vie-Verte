@@ -249,12 +249,12 @@
                 <li
                   class="list"
                   :class="{ active: viewMode == 'list' }"
-                  @click="switchMode"
+                  @click="switchMode('list')"
                 ></li>
                 <li
                   class="thumbnail"
                   :class="{ active: viewMode == 'thumbnail' }"
-                  @click="switchMode"
+                  @click="switchMode('thumbnail')"
                 ></li>
               </ul>
             </div>
@@ -451,8 +451,12 @@ export default {
       });
   },
   methods: {
-    switchMode(event) {
-      this.viewMode = event.target.className;
+    switchMode(mode) {
+      if (mode === "list") {
+        this.viewMode = "list";
+      } else {
+        this.viewMode = "thumbnail";
+      }
     },
     changeType() {
       console.log("trigger");
