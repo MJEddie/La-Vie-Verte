@@ -36,7 +36,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="部木屋"
-                    v-model="categoryFilter"
+                    v-model="selectedCategory"
+                    @change="changeCategory"
                   />
                   <label class="form-check-label s-icon01" for="部木屋"
                     >部木屋</label
@@ -47,7 +48,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="箱庭"
-                    v-model="categoryFilter"
+                    v-model="selectedCategory"
+                    @change="changeCategory"
                   />
                   <label class="form-check-label s-icon02" for="箱庭"
                     >箱庭</label
@@ -58,7 +60,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="禮物"
-                    v-model="categoryFilter"
+                    v-model="selectedCategory"
+                    @change="changeCategory"
                   />
                   <label class="form-check-label s-icon03" for="禮物"
                     >禮物</label
@@ -77,7 +80,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="N01"
-                    v-model="typeFilter"
+                    v-model="selectedType"
+                    @change="changeType"
                   />
                   <label class="form-check-label" for="N01">盆景</label>
                 </div>
@@ -86,7 +90,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="N02"
-                    v-model="typeFilter"
+                    v-model="selectedType"
+                    @change="changeType"
                   />
                   <label class="form-check-label" for="N02">迷你盆景</label>
                 </div>
@@ -95,7 +100,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="N03"
-                    v-model="typeFilter"
+                    v-model="selectedType"
+                    @change="changeType"
                   />
                   <label class="form-check-label" for="N03">多肉植物</label>
                 </div>
@@ -104,7 +110,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="N04"
-                    v-model="typeFilter"
+                    v-model="selectedType"
+                    @change="changeType"
                   />
                   <label class="form-check-label" for="N04">塊根植物</label>
                 </div>
@@ -113,7 +120,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="N05"
-                    v-model="typeFilter"
+                    v-model="selectedType"
+                    @change="changeType"
                   />
                   <label class="form-check-label" for="N05">觀葉植物</label>
                 </div>
@@ -230,11 +238,7 @@
                 </div>
               </div>
             </div>
-            <button
-              type="submit"
-              class="btn btn-black w-100"
-              @click="filterProducts"
-            >
+            <button type="submit" class="btn btn-black w-100">
               SEARCH
             </button>
           </div>
@@ -425,7 +429,8 @@ export default {
     return {
       viewMode: "thumbnail",
       prevPageToken: false,
-      categoryFilter: [],
+      selectedCategory: [],
+      selectedType: [],
       typeFilter: [],
       sizeFilter: [],
       priceFilter: [],
@@ -449,48 +454,62 @@ export default {
     switchMode(event) {
       this.viewMode = event.target.className;
     },
+    changeType() {
+      console.log("trigger");
+      // console.log(this.selectedType);
+      this.filterProducts();
+    },
+    // productCategoryFilter() {
+    //   return product.category.indexOf(filter) != -1;
+    // },
+    // productTypeFilter(filter) {
+    //   return product.type.indexOf(filter) != -1;
+    // },
+    // productSizeFilter(filter, product) {
+    //   return product.size.indexOf(filter) != -1;
+    // },
+    // productPriceFilter(filter, product) {
+    //   switch (filter) {
+    //     case "5000":
+    //       return product.price < 5000;
+    //     case "10000":
+    //       return product.price > 5000 && product.price < 10001;
+    //     case "20000":
+    //       return product.price > 10000 && product.price < 20001;
+    //     case "30000":
+    //       return product.price > 20000 && product.price < 30001;
+    //     case "30001":
+    //       return product.price > 30001;
+    //   }
+    // },
     filterProducts() {
-      const result = [];
-      const categoryFilters = this.categoryFilter;
-      const typeFilters = this.typeFilter;
-      const sizeFilters = this.sizeFilter;
-      const priceFilters = this.priceFilter;
-
-      this.productList.forEach(function (product) {
-        function productCategoryFilter(filter) {
-          return product.category.indexOf(filter) != -1;
-        }
-        function productTypeFilter(filter) {
-          return product.type.indexOf(filter) != -1;
-        }
-        function productSizeFilter(filter) {
-          return product.size.indexOf(filter) != -1;
-        }
-        function productPriceFilter(filter) {
-          switch (filter) {
-            case "5000":
-              return product.price < 5000;
-            case "10000":
-              return product.price > 5000 && product.price < 10001;
-            case "20000":
-              return product.price > 10000 && product.price < 20001;
-            case "30000":
-              return product.price > 20000 && product.price < 30001;
-            case "30001":
-              return product.price > 30001;
+      let result = this.productList;
+      console.log("select", this.selectedType);
+      // const typeFilters = this.typeFilter;
+      // const sizeFilters = this.sizeFilter;
+      // const priceFilters = this.priceFilter;
+      result = result.filter((product) => {
+        let flag = false;
+        console.log("product type", product.type);
+        product.type.forEach((type) => {
+          if (this.selectedType.includes(type)) {
+            flag = true;
           }
-        }
-
-        if (
-          categoryFilters.every(productCategoryFilter) &
-          typeFilters.some(productTypeFilter) &
-          sizeFilters.every(productSizeFilter) &
-          priceFilters.every(productPriceFilter)
-        ) {
-          result.push(product);
-        }
+        });
+        return flag;
       });
-      console.log(result);
+
+      // this.productList.forEach(function (product) {
+      //   if (
+      //     categoryFilters.every(this.productCategoryFilter(filter, product)) &
+      //     typeFilters.every(this.productTypeFilter(filter, product)) &
+      //     sizeFilters.every(this.productSizeFilter(filter, product)) &
+      //     priceFilters.every(this.productPriceFilter(filter, product))
+      //   ) {
+      //     result.push(product);
+      //   }
+      // });
+      // console.log(result);
       this.activeProductList = result;
     },
     priceFormat(price) {
