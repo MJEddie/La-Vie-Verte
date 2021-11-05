@@ -2,7 +2,7 @@
     "products": [{
             "id": 1,
             "category": ["禮物", "箱庭"],
-            "type": "N01",
+            "type": ["N01"],
             "thumbnail": "https://i.imgur.com/qxwLHXO.jpg",
             "title": "盆景　五葉松",
             "description": "精美完成的五葉松",
@@ -14,7 +14,7 @@
         {
             "id": 2,
             "category": ["禮物", "箱庭"],
-            "type": "N01",
+            "type": ["N01"],
             "thumbnail": "https://i.imgur.com/VRjlhWV.jpg",
             "title": "盆景　紫杜松",
             "description": "美麗的葉色紫杜松",
@@ -26,7 +26,7 @@
         {
             "id": 3,
             "category": ["禮物", "箱庭"],
-            "type": "N01",
+            "type": ["N01"],
             "thumbnail": "https://i.imgur.com/UYnMR3F.jpg",
             "title": "盆景　真柏 No.5",
             "description": "外形極好的真柏",
@@ -38,7 +38,7 @@
         {
             "id": 4,
             "category": "箱庭",
-            "type": "N01",
+            "type": ["N01"],
             "thumbnail": "https://i.imgur.com/8OvycMd.jpg",
             "title": "盆景　石化檜 No.3",
             "description": "稍大型尺寸感的石化檜",
@@ -50,7 +50,7 @@
         {
             "id": 5,
             "category": "箱庭",
-            "type": "N01",
+            "type": ["N01"],
             "thumbnail": "https://i.imgur.com/JHgOnjb.jpg",
             "title": "盆景　真柏",
             "description": "盆景的王道真柏，是非常美麗的一種盆景。",
@@ -62,7 +62,7 @@
         {
             "id": 6,
             "category": ["禮物", "箱庭"],
-            "type": "N01",
+            "type": ["N01"],
             "thumbnail": "https://i.imgur.com/hflIxTq.jpg",
             "title": "盆景　黒松",
             "description": "富有魅力的黑松盆景",
@@ -74,7 +74,7 @@
         {
             "id": 7,
             "category": "箱庭",
-            "type": "N02",
+            "type": ["N02"],
             "thumbnail": "https://i.imgur.com/y3Ek89C.jpg",
             "title": "迷你盆景　火棘",
             "description": "小而可愛的火棘",
@@ -86,7 +86,7 @@
         {
             "id": 8,
             "category": "箱庭",
-            "type": "N02",
+            "type": ["N02"],
             "thumbnail": "https://i.imgur.com/FRJ3gyP.jpg",
             "title": "迷你盆景　紅楓",
             "description": "新迷你盆景楓葉",
@@ -98,7 +98,7 @@
         {
             "id": 9,
             "category": "箱庭",
-            "type": "N02",
+            "type": ["N02"],
             "thumbnail": "https://i.imgur.com/bNGE03J.jpg",
             "title": "迷你盆景　八房香丁木",
             "description": "葉子細小，枝條細細分開，即使很小也有大樹的感覺。",
@@ -110,7 +110,7 @@
         {
             "id": 10,
             "category": "箱庭",
-            "type": "N02",
+            "type": ["N02"],
             "thumbnail": "https://i.imgur.com/jcZdMxu.jpg",
             "title": "迷你盆景　女貞",
             "description": "獨具個性的樹形",
@@ -122,7 +122,7 @@
         {
             "id": 11,
             "category": "箱庭",
-            "type": "N02",
+            "type": ["N02"],
             "thumbnail": "https://i.imgur.com/UzyNzJT.jpg",
             "title": "迷你盆景　台灣山椒",
             "description": "它是一種罕見的盆景品種，產量有限。",
@@ -146,7 +146,7 @@
         {
             "id": 13,
             "category": ["部木屋", "箱庭"],
-            "type": "N03",
+            "type": ["N03"],
             "thumbnail": "https://i.imgur.com/7BCt7GE.jpg",
             "title": "多肉植物　矮人節",
             "description": "變成樹木的多肉植物",
@@ -158,7 +158,7 @@
         {
             "id": 14,
             "category": ["部木屋", "箱庭"],
-            "type": "N03",
+            "type": ["N03"],
             "thumbnail": "https://i.imgur.com/G1Ergu3.jpg",
             "title": "多肉植物　景天",
             "description": "長滿細毛的可愛景天",
@@ -170,7 +170,7 @@
         {
             "id": 15,
             "category": ["部木屋", "箱庭"],
-            "type": "N03",
+            "type": ["N03"],
             "thumbnail": "https://i.imgur.com/b73wgtj.jpg",
             "title": "多肉植物　孔雀之舞",
             "description": "透過扦插的繁殖方式增加個體",
@@ -182,7 +182,7 @@
         {
             "id": 16,
             "category": ["部木屋", "禮物"],
-            "type": "N03",
+            "type": ["N03"],
             "thumbnail": "https://i.imgur.com/53esJSx.jpg",
             "title": "多肉植物　銀烏帽子",
             "description": "一頂銀色的烏木帽，帶有柔和的銀色刺，看起來像柔軟的頭髮",
@@ -194,7 +194,7 @@
         {
             "id": 17,
             "category": ["部木屋", "禮物"],
-            "type": "N03",
+            "type": ["N03"],
             "thumbnail": "https://i.imgur.com/mrGebZU.jpg",
             "title": "蒙維利亞雪峰　仙人掌",
             "description": "猶如飄落在高雅粗獷的山峰上的積雪",
@@ -206,7 +206,7 @@
         {
             "id": 18,
             "category": ["部木屋", "禮物"],
-            "type": "N03",
+            "type": ["N03"],
             "thumbnail": "https://i.imgur.com/7fj1vVb.jpg",
             "title": "龍舌蘭　笹之雪",
             "description": "厚葉搭配葉片上的白色細紋讓人愛不釋手",
@@ -230,7 +230,7 @@
         {
             "id": 20,
             "category": ["部木屋", "禮物"],
-            "type": "N04",
+            "type": ["N04"],
             "thumbnail": "https://i.imgur.com/TqodBkO.jpg",
             "title": "塊根植物　象牙宮",
             "description": "受歡迎的類型，以白馬城的名義流傳",
@@ -242,7 +242,7 @@
         {
             "id": 21,
             "category": ["部木屋", "禮物"],
-            "type": "N04",
+            "type": ["N04"],
             "thumbnail": "https://i.imgur.com/k0Lcu6d.jpg",
             "title": "非洲　霸王樹",
             "description": "一種非常罕見的無刺類型",
@@ -254,7 +254,7 @@
         {
             "id": 22,
             "category": ["部木屋", "禮物"],
-            "type": "N04",
+            "type": ["N04"],
             "thumbnail": "https://i.imgur.com/Vufg8ay.jpg",
             "title": "大㦸科　鬼棲閣",
             "description": "來自馬馬達加斯加西北部的稀有物種",
@@ -266,7 +266,7 @@
         {
             "id": 23,
             "category": ["部木屋", "禮物"],
-            "type": "N04",
+            "type": ["N04"],
             "thumbnail": "https://i.imgur.com/1Qt1LOW.jpg",
             "title": "沙漠　蘇木",
             "description": "日式古樹風格的塊根植物",
@@ -278,7 +278,7 @@
         {
             "id": 24,
             "category": ["部木屋", "禮物"],
-            "type": "N04",
+            "type": ["N04"],
             "thumbnail": "https://i.imgur.com/T5e7slK.jpg",
             "title": "蘇鐵大戟　鐵甲丸",
             "description": "相當稀有的略大株鐵甲丸",
@@ -290,7 +290,7 @@
         {
             "id": 25,
             "category": "部木屋",
-            "type": "N05",
+            "type": ["N05"],
             "thumbnail": "https://i.imgur.com/on3GAWY.jpg",
             "title": "天堂鳥　鶴望蘭",
             "description": "有著迷人大葉子的鶴望蘭",
@@ -302,7 +302,7 @@
         {
             "id": 26,
             "category": "部木屋",
-            "type": "N05",
+            "type": ["N05"],
             "thumbnail": "https://i.imgur.com/kYIgnn6.jpg",
             "title": "傘榕　愛心榕",
             "description": "枝繁葉茂的愛心榕",
@@ -314,7 +314,7 @@
         {
             "id": 27,
             "category": "部木屋",
-            "type": "N05",
+            "type": ["N05"],
             "thumbnail": "https://i.imgur.com/SBUTMB2.jpg",
             "title": "鵝掌柴  No.10",
             "description": "具有強大存在感的鵝掌柴",
@@ -338,7 +338,7 @@
         {
             "id": 29,
             "category": ["部木屋", "禮物"],
-            "type": "N05",
+            "type": ["N05"],
             "thumbnail": "https://i.imgur.com/XYXKHM8.jpg",
             "title": "亞當的針　花葉絲蘭",
             "description": "美麗的花葉絲蘭",
@@ -350,7 +350,7 @@
         {
             "id": 30,
             "category": ["部木屋", "禮物"],
-            "type": "N05",
+            "type": ["N05"],
             "thumbnail": "https://i.imgur.com/uM7aX6j.jpg",
             "title": "流血之樹　龍血樹",
             "description": "盆景狀的龍血樹",
@@ -388,7 +388,7 @@
         {
             "id": 33,
             "category": ["禮物", "箱庭"],
-            "type": "N04",
+            "type": ["N04"],
             "thumbnail": "https://i.imgur.com/uiKnC2U.jpg",
             "title": "颯貝大戟群生群",
             "subtitle": "令人驚嘆的球形群體",
@@ -401,7 +401,7 @@
         {
             "id": 34,
             "category": ["禮物", "部木屋"],
-            "type": "N03",
+            "type": ["N03"],
             "thumbnail": "https://i.imgur.com/8guF1R1.jpg",
             "title": "十二卷屬  姬玉露",
             "subtitle": "水滴般的美麗葉子",
@@ -440,7 +440,7 @@
         {
             "id": 37,
             "category": ["部木屋", "禮物"],
-            "type": "N05",
+            "type": ["N05"],
             "thumbnail": "https://i.imgur.com/QYgQxTE.jpg",
             "title": "吉祥樹  南天竹",
             "subtitle": "幸運招財的代表",
@@ -465,7 +465,7 @@
         {
             "id": 39,
             "category": ["部木屋", "禮物"],
-            "type": "N04",
+            "type": ["N04"],
             "thumbnail": "https://i.imgur.com/2DnD8Dh.jpg",
             "title": "象腳　龜甲龍",
             "description": "與盆器完美結合，擁有端莊亮麗的外觀",
