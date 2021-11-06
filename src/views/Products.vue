@@ -21,7 +21,12 @@
             <h3 class="title mb-3 pb-2">SEARCH ITEM</h3>
             <div class="list-group mb-2 pb-3">
               <p class="m-0">關鍵字</p>
-              <input type="text" class="form-control" />
+              <input
+                type="text"
+                class="form-control"
+                v-model="search"
+                @keyup="searchProduct"
+              />
             </div>
             <div class="list-group mb-3 pb-2">
               <div class="filter-title fs-6 mb-3 pb-2">
@@ -432,6 +437,7 @@ export default {
     return {
       viewMode: "thumbnail",
       prevPageToken: false,
+      search: "",
       selectedCategory: [],
       selectedType: [],
       selectedSize: [],
@@ -459,6 +465,13 @@ export default {
       } else {
         this.viewMode = "thumbnail";
       }
+    },
+    searchProduct() {
+      let result = this.productList;
+      result = result.filter((product) => {
+        return product.title.trim().includes(this.search);
+      });
+      this.activeProductList = result;
     },
     changeCategory() {
       this.productCategoryFilter();
