@@ -458,20 +458,13 @@ export default {
         this.viewMode = "thumbnail";
       }
     },
-    changeType() {
-      console.log("trigger");
-      // console.log(this.selectedType);
-      this.filterProducts();
+    changeCategory() {
+      this.productCategoryFilter();
     },
-    // productCategoryFilter() {
-    //   return product.category.indexOf(filter) != -1;
-    // },
-    // productTypeFilter(filter) {
-    //   return product.type.indexOf(filter) != -1;
-    // },
-    // productSizeFilter(filter, product) {
-    //   return product.size.indexOf(filter) != -1;
-    // },
+    changeType() {
+      this.productTypeFilter();
+    },
+
     // productPriceFilter(filter, product) {
     //   switch (filter) {
     //     case "5000":
@@ -486,34 +479,39 @@ export default {
     //       return product.price > 30001;
     //   }
     // },
-    filterProducts() {
+    productCategoryFilter() {
       let result = this.productList;
-      console.log("select", this.selectedType);
-      // const typeFilters = this.typeFilter;
-      // const sizeFilters = this.sizeFilter;
-      // const priceFilters = this.priceFilter;
-      result = result.filter((product) => {
-        let flag = false;
-        console.log("product type", product.type);
-        product.type.forEach((type) => {
-          if (this.selectedType.includes(type)) {
-            flag = true;
-          }
+      if (this.selectedCategory.length === 0) {
+        result = this.productList;
+      } else {
+        result = result.filter((product) => {
+          let flag = false;
+          product.category.forEach((category) => {
+            if (this.selectedCategory.includes(category)) {
+              flag = true;
+            }
+          });
+          return flag;
         });
-        return flag;
-      });
+      }
+      this.activeProductList = result;
+    },
+    productTypeFilter() {
+      let result = this.productList;
+      if (this.selectedType.length === 0) {
+        result = this.productList;
+      } else {
+        result = result.filter((product) => {
+          let flag = false;
+          product.type.forEach((type) => {
+            if (this.selectedType.includes(type)) {
+              flag = true;
+            }
+          });
+          return flag;
+        });
+      }
 
-      // this.productList.forEach(function (product) {
-      //   if (
-      //     categoryFilters.every(this.productCategoryFilter(filter, product)) &
-      //     typeFilters.every(this.productTypeFilter(filter, product)) &
-      //     sizeFilters.every(this.productSizeFilter(filter, product)) &
-      //     priceFilters.every(this.productPriceFilter(filter, product))
-      //   ) {
-      //     result.push(product);
-      //   }
-      // });
-      // console.log(result);
       this.activeProductList = result;
     },
     priceFormat(price) {
