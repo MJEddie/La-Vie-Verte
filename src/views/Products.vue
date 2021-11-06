@@ -138,7 +138,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="small"
-                    v-model="sizeFilter"
+                    v-model="selectedSize"
+                    @change="changeSize"
                   />
                   <label class="form-check-label" for="small"
                     >S (15cm 以下)</label
@@ -149,7 +150,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="medium"
-                    v-model="sizeFilter"
+                    v-model="selectedSize"
+                    @change="changeSize"
                   />
                   <label class="form-check-label" for="medium"
                     >M (15-59cm)</label
@@ -160,7 +162,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="large"
-                    v-model="sizeFilter"
+                    v-model="selectedSize"
+                    @change="changeSize"
                   />
                   <label class="form-check-label" for="large"
                     >L (60-149cm)</label
@@ -171,7 +174,8 @@
                     class="form-check-input"
                     type="checkbox"
                     value="extra large"
-                    v-model="sizeFilter"
+                    v-model="selectedSize"
+                    @change="changeSize"
                   />
                   <label class="form-check-label" for="extra large"
                     >XL (150cm 以上)</label
@@ -431,6 +435,7 @@ export default {
       prevPageToken: false,
       selectedCategory: [],
       selectedType: [],
+      selectedSize: [],
       typeFilter: [],
       sizeFilter: [],
       priceFilter: [],
@@ -463,6 +468,9 @@ export default {
     },
     changeType() {
       this.productTypeFilter();
+    },
+    changeSize() {
+      this.productSizeFilter();
     },
 
     // productPriceFilter(filter, product) {
@@ -511,7 +519,17 @@ export default {
           return flag;
         });
       }
-
+      this.activeProductList = result;
+    },
+    productSizeFilter() {
+      let result = this.productList;
+      if (this.selectedSize.length === 0) {
+        result = this.productList;
+      } else {
+        result = result.filter((product) => {
+          return this.selectedSize.includes(product.size);
+        });
+      }
       this.activeProductList = result;
     },
     priceFormat(price) {
