@@ -193,52 +193,51 @@
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="5000"
-                    v-model="priceFilter"
+                    value="0"
+                    v-model="selectedPrice"
+                    @change="changePrice"
                   />
-                  <label class="form-check-label" for="5000">～5000</label>
+                  <label class="form-check-label" for="0">0 ～ 5000</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="10000"
-                    v-model="priceFilter"
+                    value="1"
+                    v-model="selectedPrice"
+                    @change="changePrice"
                   />
-                  <label class="form-check-label" for="10000"
-                    >5001～10000</label
-                  >
+                  <label class="form-check-label" for="1">5001 ～ 10000</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="20000"
-                    v-model="priceFilter"
+                    value="2"
+                    v-model="selectedPrice"
+                    @change="changePrice"
                   />
-                  <label class="form-check-label" for="20000"
-                    >10001～20000</label
-                  >
+                  <label class="form-check-label" for="2">10001 ～ 20000</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="30000"
-                    v-model="priceFilter"
+                    value="3"
+                    v-model="selectedPrice"
+                    @change="changePrice"
                   />
-                  <label class="form-check-label" for="30000"
-                    >20001～30000</label
-                  >
+                  <label class="form-check-label" for="3">20001 ～ 30000</label>
                 </div>
                 <div class="form-check mb-1">
                   <input
                     class="form-check-input"
                     type="checkbox"
-                    value="30001"
-                    v-model="priceFilter"
+                    value="4"
+                    v-model="selectedPrice"
+                    @change="changePrice"
                   />
-                  <label class="form-check-label" for="30001">30001～</label>
+                  <label class="form-check-label" for="4">30001 ～ above</label>
                 </div>
               </div>
             </div>
@@ -436,9 +435,7 @@ export default {
       selectedCategory: [],
       selectedType: [],
       selectedSize: [],
-      typeFilter: [],
-      sizeFilter: [],
-      priceFilter: [],
+      selectedPrice: [],
       productList: [],
       activeProductList: [],
     };
@@ -472,21 +469,9 @@ export default {
     changeSize() {
       this.productSizeFilter();
     },
-
-    // productPriceFilter(filter, product) {
-    //   switch (filter) {
-    //     case "5000":
-    //       return product.price < 5000;
-    //     case "10000":
-    //       return product.price > 5000 && product.price < 10001;
-    //     case "20000":
-    //       return product.price > 10000 && product.price < 20001;
-    //     case "30000":
-    //       return product.price > 20000 && product.price < 30001;
-    //     case "30001":
-    //       return product.price > 30001;
-    //   }
-    // },
+    changePrice() {
+      this.productPriceFilter();
+    },
     productCategoryFilter() {
       let result = this.productList;
       if (this.selectedCategory.length === 0) {
@@ -530,6 +515,35 @@ export default {
           return this.selectedSize.includes(product.size);
         });
       }
+      this.activeProductList = result;
+    },
+    productPriceFilter() {
+      let result = this.productList;
+      if (this.selectedPrice.length === 0) {
+        result = this.productList;
+      } else if (this.selectedPrice == "0") {
+        result = result.filter((product) => {
+          return product.price < 5000;
+        });
+      } else if (this.selectedPrice == "1") {
+        result = result.filter((product) => {
+          return product.price > 5000 && product.price < 10001;
+        });
+      } else if (this.selectedPrice == "2") {
+        result = result.filter((product) => {
+          return product.price > 10000 && product.price < 20001;
+        });
+      } else if (this.selectedPrice == "3") {
+        result = result.filter((product) => {
+          return product.price > 20000 && product.price < 30001;
+        });
+      } else if (this.selectedPrice == "4") {
+        result = result.filter((product) => {
+          return product.price > 30001;
+        });
+      }
+      console.log(this.selectedPrice);
+      console.log(result);
       this.activeProductList = result;
     },
     priceFormat(price) {
