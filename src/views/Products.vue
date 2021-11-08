@@ -42,7 +42,7 @@
                     type="checkbox"
                     value="部木屋"
                     v-model="selectedCategory"
-                    @change="changeCategory"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label s-icon01" for="部木屋"
                     >部木屋</label
@@ -54,7 +54,7 @@
                     type="checkbox"
                     value="箱庭"
                     v-model="selectedCategory"
-                    @change="changeCategory"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label s-icon02" for="箱庭"
                     >箱庭</label
@@ -66,7 +66,7 @@
                     type="checkbox"
                     value="禮物"
                     v-model="selectedCategory"
-                    @change="changeCategory"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label s-icon03" for="禮物"
                     >禮物</label
@@ -86,7 +86,7 @@
                     type="checkbox"
                     value="N01"
                     v-model="selectedType"
-                    @change="changeType"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="N01">盆景</label>
                 </div>
@@ -96,7 +96,7 @@
                     type="checkbox"
                     value="N02"
                     v-model="selectedType"
-                    @change="changeType"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="N02">迷你盆景</label>
                 </div>
@@ -106,7 +106,7 @@
                     type="checkbox"
                     value="N03"
                     v-model="selectedType"
-                    @change="changeType"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="N03">多肉植物</label>
                 </div>
@@ -116,7 +116,7 @@
                     type="checkbox"
                     value="N04"
                     v-model="selectedType"
-                    @change="changeType"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="N04">塊根植物</label>
                 </div>
@@ -126,7 +126,7 @@
                     type="checkbox"
                     value="N05"
                     v-model="selectedType"
-                    @change="changeType"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="N05">觀葉植物</label>
                 </div>
@@ -168,7 +168,7 @@
                     type="checkbox"
                     value="large"
                     v-model="selectedSize"
-                    @change="changeSize"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="large"
                     >L (60-149cm)</label
@@ -180,7 +180,7 @@
                     type="checkbox"
                     value="extra large"
                     v-model="selectedSize"
-                    @change="changeSize"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="extra large"
                     >XL (150cm 以上)</label
@@ -200,7 +200,7 @@
                     type="checkbox"
                     value="0"
                     v-model="selectedPrice"
-                    @change="changePrice"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="0">0 ～ 5000</label>
                 </div>
@@ -210,7 +210,7 @@
                     type="checkbox"
                     value="1"
                     v-model="selectedPrice"
-                    @change="changePrice"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="1">5001 ～ 10000</label>
                 </div>
@@ -220,7 +220,7 @@
                     type="checkbox"
                     value="2"
                     v-model="selectedPrice"
-                    @change="changePrice"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="2">10001 ～ 20000</label>
                 </div>
@@ -230,7 +230,7 @@
                     type="checkbox"
                     value="3"
                     v-model="selectedPrice"
-                    @change="changePrice"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="3">20001 ～ 30000</label>
                 </div>
@@ -240,7 +240,7 @@
                     type="checkbox"
                     value="4"
                     v-model="selectedPrice"
-                    @change="changePrice"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="4">30001 ～ above</label>
                 </div>
@@ -250,7 +250,7 @@
           </div>
           <div class="col-md-9">
             <h3 class="title mb-3 pb-2">
-              全商品 {{ activeProductList.length }}
+              全商品 ({{ activeProductList.length }})
             </h3>
             <div class="switch-view">
               <ul class="switch d-flex justify-content-end">
@@ -473,24 +473,7 @@ export default {
       });
       this.activeProductList = result;
     },
-    changeCategory() {
-      this.productsFilter();
-      // this.productCategoryFilter();
-    },
-    changeType() {
-      this.productsFilter();
-      // this.productTypeFilter();
-    },
-    changeSize() {
-      this.productsFilter();
-    },
-    changePrice() {
-      this.productsFilter();
-    },
-
     productsFilter() {
-      // const filters = [this.selectedCategory, this.selectedType];
-      // console.log(filters);
       let result = this.productList;
 
       if (this.selectedCategory.length > 0) {
@@ -500,6 +483,9 @@ export default {
         result = this.productTypeFilter(result);
       }
       if (this.selectedSize.length > 0) {
+        if (this.selectedSize.length > 1) {
+          this.selectedSize.splice(0, 1);
+        }
         result = this.productSizeFilter(result);
       }
       if (this.selectedPrice.length > 0) {
@@ -508,49 +494,37 @@ export default {
       this.activeProductList = result;
     },
     productCategoryFilter(result) {
-      // let result = this.productList;
-      if (this.selectedCategory.length === 0) {
-        result = this.productList;
-      } else {
-        result = result.filter((product) => {
-          let flag = false;
-          product.category.forEach((category) => {
-            if (this.selectedCategory.includes(category)) {
-              flag = true;
-            }
-          });
-          return flag;
+      result = result.filter((product) => {
+        let flag = false;
+        product.category.forEach((category) => {
+          if (this.selectedCategory.includes(category)) {
+            flag = true;
+          }
         });
-      }
+        return flag;
+      });
       return result;
     },
     productTypeFilter(result) {
-      if (this.selectedType.length === 0) {
-        result = this.productList;
-      } else {
-        result = result.filter((product) => {
-          let flag = false;
-          product.type.forEach((type) => {
-            if (this.selectedType.includes(type)) {
-              flag = true;
-            }
-          });
-          return flag;
+      result = result.filter((product) => {
+        let flag = false;
+        product.type.forEach((type) => {
+          if (this.selectedType.includes(type)) {
+            flag = true;
+          }
         });
-      }
+        return flag;
+      });
       return result;
     },
     productSizeFilter(result) {
       result = result.filter((product) => {
         return this.selectedSize.includes(product.size);
       });
-
       return result;
     },
     productPriceFilter(result) {
-      if (this.selectedPrice.length === 0) {
-        result = this.productList;
-      } else if (this.selectedPrice == "0") {
+      if (this.selectedPrice == "0") {
         result = result.filter((product) => {
           return product.price < 5000;
         });
@@ -571,7 +545,6 @@ export default {
           return product.price > 30001;
         });
       }
-
       return result;
     },
     priceFormat(price) {
