@@ -518,33 +518,46 @@ export default {
       return result;
     },
     productSizeFilter(result) {
-      result = result.filter((product) => {
+      result.filter((product) => {
         return this.selectedSize.includes(product.size);
       });
       return result;
     },
     productPriceFilter(result) {
-      if (this.selectedPrice == "0") {
-        result = result.filter((product) => {
-          return product.price < 5000;
-        });
-      } else if (this.selectedPrice == "1") {
-        result = result.filter((product) => {
-          return product.price > 5000 && product.price < 10001;
-        });
-      } else if (this.selectedPrice == "2") {
-        result = result.filter((product) => {
-          return product.price > 10000 && product.price < 20001;
-        });
-      } else if (this.selectedPrice == "3") {
-        result = result.filter((product) => {
-          return product.price > 20000 && product.price < 30001;
-        });
-      } else if (this.selectedPrice == "4") {
-        result = result.filter((product) => {
-          return product.price > 30001;
-        });
-      }
+      let priceTag0 = [];
+      let priceTag1 = [];
+      let priceTag2 = [];
+      let priceTag3 = [];
+      let priceTag4 = [];
+      this.selectedPrice.forEach((priceTag) => {
+        if (priceTag === "0") {
+          priceTag0 = result.filter((product) => {
+            return product.price < 5000;
+          });
+        }
+        if (priceTag === "1") {
+          console.log("1");
+          priceTag1 = result.filter((product) => {
+            return product.price > 5000 && product.price < 10001;
+          });
+        }
+        if (priceTag === "2") {
+          priceTag2 = result.filter((product) => {
+            return product.price > 10000 && product.price < 20001;
+          });
+        }
+        if (priceTag === "3") {
+          priceTag3 = result.filter((product) => {
+            return product.price > 20000 && product.price < 30001;
+          });
+        }
+        if (priceTag === "4") {
+          priceTag4 = result.filter((product) => {
+            return product.price > 30001;
+          });
+        }
+      });
+      result = priceTag0.concat(priceTag1, priceTag2, priceTag3, priceTag4);
       return result;
     },
     priceFormat(price) {
