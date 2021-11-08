@@ -144,7 +144,7 @@
                     type="checkbox"
                     value="small"
                     v-model="selectedSize"
-                    @change="changeSize"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="small"
                     >S (15cm 以下)</label
@@ -156,7 +156,7 @@
                     type="checkbox"
                     value="medium"
                     v-model="selectedSize"
-                    @change="changeSize"
+                    @change="productsFilter"
                   />
                   <label class="form-check-label" for="medium"
                     >M (15-59cm)</label
@@ -484,10 +484,10 @@ export default {
       // this.productTypeFilter();
     },
     changeSize() {
-      this.productSizeFilter();
+      this.productsFilter();
     },
     changePrice() {
-      this.productPriceFilter();
+      this.productsFilter();
     },
 
     productsFilter() {
@@ -501,15 +501,11 @@ export default {
       if (this.selectedType.length > 0) {
         result = this.productTypeFilter(result);
       }
+      console.log(this.selectedSize.length);
+      if (this.selectedSize.length > 0) {
+        result = this.productSizeFilter(result);
+      }
       this.activeProductList = result;
-      // if (this.selectedCategory.length && this.selectedType.length !== 0) {
-      //   console.log("2");
-      //   result = this.productCategoryFilter(result);
-      //   result = this.productTypeFilter(result);
-
-      // } else {
-      //   console.log("x");
-      // }
     },
     productCategoryFilter(result) {
       // let result = this.productList;
@@ -545,16 +541,12 @@ export default {
       }
       return result;
     },
-    productSizeFilter() {
-      let result = this.productList;
-      if (this.selectedSize.length === 0) {
-        result = this.productList;
-      } else {
-        result = result.filter((product) => {
-          return this.selectedSize.includes(product.size);
-        });
-      }
-      this.activeProductList = result;
+    productSizeFilter(result) {
+      result = result.filter((product) => {
+        return this.selectedSize.includes(product.size);
+      });
+
+      return result;
     },
     productPriceFilter() {
       let result = this.productList;
