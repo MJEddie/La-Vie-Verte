@@ -251,7 +251,9 @@
             </button>
           </div>
           <div class="col-md-9">
-            <h3 class="title mb-3 pb-2">全商品</h3>
+            <h3 class="title mb-3 pb-2">
+              全商品 {{ activeProductList.length }}
+            </h3>
             <div class="switch-view">
               <ul class="switch d-flex justify-content-end">
                 <li
@@ -474,10 +476,12 @@ export default {
       this.activeProductList = result;
     },
     changeCategory() {
-      this.productCategoryFilter();
+      this.productsFilter();
+      // this.productCategoryFilter();
     },
     changeType() {
-      this.productTypeFilter();
+      this.productsFilter();
+      // this.productTypeFilter();
     },
     changeSize() {
       this.productSizeFilter();
@@ -485,8 +489,30 @@ export default {
     changePrice() {
       this.productPriceFilter();
     },
-    productCategoryFilter() {
+
+    productsFilter() {
+      // const filters = [this.selectedCategory, this.selectedType];
+      // console.log(filters);
       let result = this.productList;
+
+      if (this.selectedCategory.length > 0) {
+        result = this.productCategoryFilter(result);
+      }
+      if (this.selectedType.length > 0) {
+        result = this.productTypeFilter(result);
+      }
+      this.activeProductList = result;
+      // if (this.selectedCategory.length && this.selectedType.length !== 0) {
+      //   console.log("2");
+      //   result = this.productCategoryFilter(result);
+      //   result = this.productTypeFilter(result);
+
+      // } else {
+      //   console.log("x");
+      // }
+    },
+    productCategoryFilter(result) {
+      // let result = this.productList;
       if (this.selectedCategory.length === 0) {
         result = this.productList;
       } else {
@@ -500,10 +526,10 @@ export default {
           return flag;
         });
       }
-      this.activeProductList = result;
+      return result;
     },
-    productTypeFilter() {
-      let result = this.productList;
+    productTypeFilter(result) {
+      // let result = this.productList;
       if (this.selectedType.length === 0) {
         result = this.productList;
       } else {
@@ -517,7 +543,7 @@ export default {
           return flag;
         });
       }
-      this.activeProductList = result;
+      return result;
     },
     productSizeFilter() {
       let result = this.productList;
