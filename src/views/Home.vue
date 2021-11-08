@@ -94,7 +94,15 @@
 
     <section class="week">
       <div
-        class="container-fluid d-flex justify-content-start w-100 mt-5 px-0 pt-3"
+        class="
+          container-fluid
+          d-flex
+          justify-content-start
+          w-100
+          mt-5
+          px-0
+          pt-3
+        "
       >
         <div class="thumbnail week flex-shrink-0"></div>
         <div class="info week d-flex flex-column align-self-center">

@@ -1,7 +1,7 @@
 <template>
   <NavBar></NavBar>
   <main>
-    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: '';">
+    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: ''">
       <ol class="breadcrumb fw-light mb-0">
         <li class="breadcrumb-item px-4">
           <router-link to="/"><span>HOME</span></router-link>
@@ -76,29 +76,29 @@
               <swiper-slide
                 ><img
                   src="https://ki-do-ri.jp/upload/save_image/02011823_5c54100debe5c.jpg"
-                  style="width: 100px;" /></swiper-slide
+                  style="width: 100px" /></swiper-slide
               ><swiper-slide
                 ><img
                   src="https://ki-do-ri.jp/upload/save_image/02011824_5c541035e3d41.jpg"
-                  style="width: 100px;" /></swiper-slide
+                  style="width: 100px" /></swiper-slide
               ><swiper-slide
                 ><img
                   src="https://ki-do-ri.jp/upload/save_image/02011824_5c5410471d19e.jpg"
-                  style="width: 100px;" /></swiper-slide
+                  style="width: 100px" /></swiper-slide
               ><swiper-slide
                 ><img
                   src="https://ki-do-ri.jp/upload/save_image/02011824_5c541051f27b8.jpg"
-                  style="width: 100px;"
+                  style="width: 100px"
               /></swiper-slide>
               ><swiper-slide
                 ><img
                   src="https://ki-do-ri.jp/upload/save_image/02011824_5c54106775f48.jpg"
-                  style="width: 100px;"
+                  style="width: 100px"
               /></swiper-slide>
               ><swiper-slide
                 ><img
                   src="https://ki-do-ri.jp/upload/save_image/02011825_5c54108e81b45.jpg"
-                  style="width: 100px;"
+                  style="width: 100px"
               /></swiper-slide>
             </swiper>
             <div class="swiper-button-prev text-black"></div>
@@ -131,7 +131,11 @@
                   </button>
                   <button
                     type="button"
-                    class="btn btn-black btn-lg px-3 dropdown-toggle dropdown-toggle-split"
+                    class="
+                      btn btn-black btn-lg
+                      px-3
+                      dropdown-toggle dropdown-toggle-split
+                    "
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
@@ -205,7 +209,7 @@
               <div
                 class="progress-bar bg-gray-light"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -213,7 +217,7 @@
               <div
                 class="progress-bar bg-gray-mild"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -221,7 +225,7 @@
               <div
                 class="progress-bar bg-green-light"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -236,7 +240,7 @@
               <div
                 class="progress-bar bg-gray-light"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -244,7 +248,7 @@
               <div
                 class="progress-bar bg-gray-mild"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -252,7 +256,7 @@
               <div
                 class="progress-bar bg-green-light"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -260,7 +264,7 @@
               <div
                 class="progress-bar bg-green-mild"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -268,7 +272,7 @@
               <div
                 class="progress-bar bg-green-dark"
                 role="progressbar"
-                style="width: 20%;"
+                style="width: 20%"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -329,9 +333,7 @@
                 <p class="text-center">常緑</p>
               </div>
             </div>
-            <p>
-              各種アイコン・グラフについての詳細はこちらをご確認ください。
-            </p>
+            <p>各種アイコン・グラフについての詳細はこちらをご確認ください。</p>
           </div>
         </div>
         <div class="expert col-lg-6 p-2">
@@ -453,8 +455,7 @@ export default {
           amount: 1,
           category: ["haconiwa", "盆栽"],
           size: ["器H=5.5cm　W=14cm", "植物　H=17.5 W=31"],
-          url:
-            "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
+          url: "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
           title: "盆栽　五葉松",
           description: "美しく完成された五葉松",
           price: 220000,
