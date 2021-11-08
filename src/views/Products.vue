@@ -246,9 +246,7 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-black w-100">
-              SEARCH
-            </button>
+            <button type="submit" class="btn btn-black w-100">SEARCH</button>
           </div>
           <div class="col-md-9">
             <h3 class="title mb-3 pb-2">
@@ -501,9 +499,11 @@ export default {
       if (this.selectedType.length > 0) {
         result = this.productTypeFilter(result);
       }
-      console.log(this.selectedSize.length);
       if (this.selectedSize.length > 0) {
         result = this.productSizeFilter(result);
+      }
+      if (this.selectedPrice.length > 0) {
+        result = this.productPriceFilter(result);
       }
       this.activeProductList = result;
     },
@@ -525,7 +525,6 @@ export default {
       return result;
     },
     productTypeFilter(result) {
-      // let result = this.productList;
       if (this.selectedType.length === 0) {
         result = this.productList;
       } else {
@@ -548,8 +547,7 @@ export default {
 
       return result;
     },
-    productPriceFilter() {
-      let result = this.productList;
+    productPriceFilter(result) {
       if (this.selectedPrice.length === 0) {
         result = this.productList;
       } else if (this.selectedPrice == "0") {
@@ -573,9 +571,8 @@ export default {
           return product.price > 30001;
         });
       }
-      console.log(this.selectedPrice);
-      console.log(result);
-      this.activeProductList = result;
+
+      return result;
     },
     priceFormat(price) {
       let result = "";
