@@ -48,7 +48,7 @@ $dark : $gray-900 !default;
 $black : $black !default;
 // scss-docs-end theme-color-variables
 // scss-docs-start theme-colors-map
-$theme-colors: ( "primary" : $primary, "secondary" : $secondary, "success" : $success, "info" : $info, "warning" : $warning, "danger" : #FB8585, "light" : $light, "dark" : $dark, "black" : $black, "gray-light": #d4d5cd, "gray-mild": #aaab9d, "green-light": #7f8674, "green-mild": #4f6751, "green-dark": #0f4f3e, ) !default;
+$theme-colors: ( "primary" : $primary, "secondary" : $secondary, "success" : $success, "info" : $info, "warning" : #f00, "danger" : #FB8585, "light" : $light, "dark" : $dark, "black" : $black, "gray-light": #d4d5cd, "gray-mild": #aaab9d, "green-light": #7f8674, "green-mild": #4f6751, "green-dark": #0f4f3e, ) !default;
 // scss-docs-end theme-colors-map
 // scss-docs-start theme-colors-rgb
 $theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value") !default;
