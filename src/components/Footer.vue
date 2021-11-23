@@ -33,13 +33,17 @@ nav {
       <div class="container justify-content-center">
         <ul class="nav justify-content-between">
           <li class="nav-item">
-            <a href="#" target="_blank" class="nav-link">SHOPPING GUIDE</a>
+            <router-link to="/guide" class="nav-link"
+              >SHOPPING GUIDE</router-link
+            >
           </li>
           <li class="nav-item">
-            <a href="#" target="_blank" class="nav-link">與我們聯絡</a>
+            <router-link to="/contact" class="nav-link">CONTACT</router-link>
           </li>
           <li class="nav-item">
-            <a href="#" target="_blank" class="nav-link">個人資料保護方針</a>
+            <router-link to="/privacy" class="nav-link"
+              >個人資料保護方針</router-link
+            >
           </li>
           <li class="nav-item d-flex justify-content-end">
             <a
