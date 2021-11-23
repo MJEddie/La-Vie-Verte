@@ -22,54 +22,55 @@
       </p>
 
       <form>
-        <div class="row mb-3">
-          <label for="name" class="col-sm-3 col-form-label"
+        <div class="row name mb-3">
+          <label for="name" class="col-md-3 col-form-label"
             >您的姓名<span class="text-warning"> ※</span></label
           >
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <input
               type="text"
               class="form-control"
               id="name"
               placeholder="姓"
-              aria-label="First name"
+              aria-label="Last name"
             />
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3">
             <input
               type="text"
               class="form-control"
               id="name"
               placeholder="名"
-              aria-label="Last name"
+              aria-label="First name"
             />
           </div>
         </div>
         <div class="row mb-3">
-          <label for="phone" class="col-sm-3 col-form-label">電話號碼</label>
-          <div class="col-sm-3">
+          <label for="phone" class="col-md-3 col-form-label">電話號碼</label>
+          <div class="col-md-3">
             <input type="text" class="form-control" id="phone" />
           </div>
         </div>
         <div class="row mb-3">
-          <label for="email" class="col-sm-3 col-form-label"
+          <label for="email" class="col-md-3 col-form-label"
             >Email<span class="text-warning"> ※</span></label
           >
-          <div class="col-sm-9 gy-3">
+          <div class="col-md-9">
             <input type="email" class="form-control mb-2" id="email" />
             <input type="email" class="form-control" id="checkEmail" />
+            <span class="text-warning">請再次輸入電子郵件以確認</span>
           </div>
         </div>
         <div class="row mb-3">
-          <label for="comment" class="col-sm-3 col-form-label"
+          <label for="comment" class="col-md-3 col-form-label"
             >反映內容<span class="text-warning"> ※</span></label
           >
-          <div class="col-sm-9">
+          <div class="col-md-9">
             <textarea class="form-control" id="comment" rows="5"></textarea>
           </div>
         </div>
       </form>
-      <div class="d-grid col-3 mx-auto pt-3">
+      <div class="d-grid col-md-3 mx-auto pt-3">
         <button type="submit" class="btn btn-black">送出</button>
       </div>
     </section>
@@ -86,6 +87,16 @@ export default {
   components: {
     NavBar,
     Footer,
+  },
+  mounted() {
+    try {
+      document.createEvent("TouchEvent");
+      console.log("mobile");
+      return true;
+    } catch (e) {
+      console.log("pc");
+      return false;
+    }
   },
 };
 </script>
@@ -169,6 +180,42 @@ section.contact {
   }
   button:focus {
     box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  section.contact {
+    padding: 0 20px;
+    .row {
+      input,
+      textarea {
+        &:focus {
+          border: 1px solid #e59700;
+          outline: 1px solid #e59700;
+        }
+      }
+      &.name div {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 768px) {
+  section.contact {
+    padding: 0 30px;
+    .row {
+      input,
+      textarea {
+        &:focus {
+          border: 1px solid #e59700;
+          outline: 1px solid #e59700;
+        }
+      }
+      &.name div {
+        width: 25%;
+      }
+    }
   }
 }
 </style>
