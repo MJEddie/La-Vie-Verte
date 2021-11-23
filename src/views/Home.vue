@@ -81,12 +81,12 @@
             <router-link to="/products" class="nav-link">PRODUCTS</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/product" class="nav-link"
+            <router-link to="/guide" class="nav-link"
               >SHOPPING GUIDE</router-link
             >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">CONTACT</a>
+            <router-link to="/contact" class="nav-link">CONTACT</router-link>
           </li>
         </ul>
       </div>
@@ -94,15 +94,7 @@
 
     <section class="week">
       <div
-        class="
-          container-fluid
-          d-flex
-          justify-content-start
-          w-100
-          mt-5
-          px-0
-          pt-3
-        "
+        class="container-fluid d-flex justify-content-start w-100 mt-5 px-0 pt-3"
       >
         <div class="thumbnail week flex-shrink-0"></div>
         <div class="info week d-flex flex-column align-self-center">
