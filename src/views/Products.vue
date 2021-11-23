@@ -246,7 +246,6 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-black w-100">SEARCH</button>
           </div>
           <div class="col-md-9">
             <h3 class="title mb-3 pb-2">
@@ -536,7 +535,6 @@ export default {
           });
         }
         if (priceTag === "1") {
-          console.log("1");
           priceTag1 = result.filter((product) => {
             return product.price > 5000 && product.price < 10001;
           });
