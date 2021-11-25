@@ -1,7 +1,8 @@
+/* eslint-disable */
 <template>
   <NavBar></NavBar>
   <main>
-    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: ''">
+    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: '';">
       <ol class="breadcrumb fw-light mb-0">
         <li class="breadcrumb-item px-4">
           <router-link to="/"><span>HOME</span></router-link>
@@ -10,7 +11,7 @@
           <router-link to="/products"><span>PRODUCTS</span></router-link>
         </li>
         <li class="breadcrumb-item px-4 active" aria-current="page">
-          <span>盆栽五葉松</span>
+          <span>盆景&emsp;五葉松</span>
         </li>
       </ol>
     </div>
@@ -23,7 +24,7 @@
 
     <section class="info container-xxl">
       <div class="card mb-5 w-100 border-0">
-        <div class="list row" v-for="item in Product" :key="item.id">
+        <div class="list row">
           <div class="col-md-5">
             <!-- <img :src="item.url" alt="" class="w-100" /> -->
             <swiper
@@ -38,29 +39,29 @@
             >
               <swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011823_5c54100debe5c.jpg"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg"
                   class="w-100" /></swiper-slide
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011823_5c5410252eea0.jpg"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg"
                   class="w-100" /></swiper-slide
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011824_5c54104060fe3.jpg"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg"
                   class="w-100" /></swiper-slide
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011824_5c541058cca4f.jpg"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg"
                   class="w-100"
               /></swiper-slide>
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011824_5c541060ace97.jpg"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg"
                   class="w-100"
               /></swiper-slide>
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011826_5c5410a8ec235.jpg"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg"
                   class="w-100"
               /></swiper-slide>
             </swiper>
@@ -75,30 +76,30 @@
             >
               <swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011823_5c54100debe5c.jpg"
-                  style="width: 100px" /></swiper-slide
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                  style="width: 100px;" /></swiper-slide
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011824_5c541035e3d41.jpg"
-                  style="width: 100px" /></swiper-slide
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                  style="width: 100px;" /></swiper-slide
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011824_5c5410471d19e.jpg"
-                  style="width: 100px" /></swiper-slide
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                  style="width: 100px;" /></swiper-slide
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011824_5c541051f27b8.jpg"
-                  style="width: 100px"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                  style="width: 100px;"
               /></swiper-slide>
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011824_5c54106775f48.jpg"
-                  style="width: 100px"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                  style="width: 100px;"
               /></swiper-slide>
               ><swiper-slide
                 ><img
-                  src="https://ki-do-ri.jp/upload/save_image/02011825_5c54108e81b45.jpg"
-                  style="width: 100px"
+                  src="https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                  style="width: 100px;"
               /></swiper-slide>
             </swiper>
             <div class="swiper-button-prev text-black"></div>
@@ -106,24 +107,23 @@
           </div>
           <div class="col-md-7 ps-4">
             <div class="card-body pt-0">
-              <h5 class="card-title fw-bold">{{ item.title }}</h5>
+              <h5 class="card-title fw-bold">盆景&emsp;五葉松</h5>
               <ul class="category ps-0">
                 <li class="d-inline-block">
-                  <span class="s-icon02">{{ item.category[0] }}</span>
+                  <span class="s-icon02">禮物</span>
                 </li>
                 <li class="d-inline-block">
-                  <span>{{ item.category[1] }}</span>
+                  <span>箱庭</span>
                 </li>
               </ul>
-              <p class="size">{{ item.size[0] }}&ensp;{{ item.size[1] }}</p>
-              <p class="price">
-                售價 <span class="fs-4 fw-bold">{{ item.price }}</span>
+              <p class="size">
+                器H=5.5cm&emsp;W=14cm&emsp;植物&emsp;H=17.5&emsp;W=31
               </p>
+              <p class="price">售價 <span class="fs-4 fw-bold">220000</span></p>
               <div
                 class="btn-group w-100"
                 role="group"
                 aria-label="Button group with nested dropdown"
-                v-if="item.amount > 0"
               >
                 <div class="btn-group" role="group">
                   <button type="button" class="btn btn-black btn-lg pe-0">
@@ -131,11 +131,7 @@
                   </button>
                   <button
                     type="button"
-                    class="
-                      btn btn-black btn-lg
-                      px-3
-                      dropdown-toggle dropdown-toggle-split
-                    "
+                    class="btn btn-black btn-lg px-3 dropdown-toggle dropdown-toggle-split"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
@@ -209,7 +205,7 @@
               <div
                 class="progress-bar bg-gray-light"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -217,7 +213,7 @@
               <div
                 class="progress-bar bg-gray-mild"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -225,7 +221,7 @@
               <div
                 class="progress-bar bg-green-light"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -240,7 +236,7 @@
               <div
                 class="progress-bar bg-gray-light"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -248,7 +244,7 @@
               <div
                 class="progress-bar bg-gray-mild"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -256,7 +252,7 @@
               <div
                 class="progress-bar bg-green-light"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -264,7 +260,7 @@
               <div
                 class="progress-bar bg-green-mild"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -272,7 +268,7 @@
               <div
                 class="progress-bar bg-green-dark"
                 role="progressbar"
-                style="width: 20%"
+                style="width: 20%;"
                 aria-valuenow="20"
                 aria-valuemin="0"
                 aria-valuemax="100"
@@ -449,18 +445,6 @@ export default {
   data() {
     return {
       thumbsSwiper: null,
-      Product: [
-        {
-          id: 1,
-          amount: 1,
-          category: ["haconiwa", "盆栽"],
-          size: ["器H=5.5cm　W=14cm", "植物　H=17.5 W=31"],
-          url: "https://ki-do-ri.jp/upload/save_image/02011823_5c5410009a18f.jpg",
-          title: "盆栽　五葉松",
-          description: "美しく完成された五葉松",
-          price: 220000,
-        },
-      ],
     };
   },
   methods: {
