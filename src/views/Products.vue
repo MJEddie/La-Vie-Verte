@@ -1,7 +1,7 @@
 <template>
   <NavBar></NavBar>
   <main>
-    <div class="breadcrumb h-auto mb-0" style="--bs-breadcrumb-divider: '';">
+    <div class="breadcrumb h-auto mb-0" style="--bs-breadcrumb-divider: ''">
       <ol class="breadcrumb fw-light mb-0">
         <li class="breadcrumb-item px-4">
           <router-link to="/"><span>HOME</span></router-link>
@@ -342,7 +342,11 @@
                         </button>
                         <button
                           type="button"
-                          class="btn btn-black btn-lg px-3 dropdown-toggle dropdown-toggle-split"
+                          class="
+                            btn btn-black btn-lg
+                            px-3
+                            dropdown-toggle dropdown-toggle-split
+                          "
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
                         >

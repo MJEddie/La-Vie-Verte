@@ -1,7 +1,7 @@
 <template>
   <NavBar></NavBar>
   <main>
-    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: '';">
+    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: ''">
       <ol class="breadcrumb fw-light mb-0">
         <li class="breadcrumb-item px-4">
           <router-link to="/"><span>HOME</span></router-link>
