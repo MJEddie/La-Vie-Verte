@@ -205,9 +205,16 @@ h1.title {
         margin-bottom: 20px;
         padding: 0;
       }
-      li span {
-        font-size: 14px;
-        letter-spacing: 0.1em;
+      li {
+        list-style: none;
+        &::before {
+          content: "■";
+          margin-right: 9px;
+        }
+        span {
+          font-size: 14px;
+          letter-spacing: 0.1em;
+        }
       }
       p {
         font-size: 13px;
