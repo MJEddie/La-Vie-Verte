@@ -1,7 +1,7 @@
 <template>
   <NavBar></NavBar>
   <main>
-    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: ''">
+    <div class="breadcrumb h-auto mb-5" style="--bs-breadcrumb-divider: '';">
       <ol class="breadcrumb fw-light mb-0">
         <li class="breadcrumb-item px-4">
           <router-link to="/"><span>HOME</span></router-link>
@@ -26,7 +26,7 @@
           <label for="name" class="col-md-3 col-form-label"
             >您的姓名<span class="text-warning"> ※</span></label
           >
-          <div class="col-md-3">
+          <div class="col-sm-5 col-md-3">
             <input
               type="text"
               class="form-control"
@@ -35,7 +35,7 @@
               aria-label="Last name"
             />
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-5 col-md-3">
             <input
               type="text"
               class="form-control"
@@ -150,6 +150,12 @@ section.contact {
   width: 100%;
   font-size: 13px;
   margin-bottom: 100px;
+  @media screen and (max-width: 767.98px) {
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 960px) {
+    padding: 0 30px;
+  }
   p {
     margin-bottom: 40px;
   }
@@ -167,6 +173,10 @@ section.contact {
         box-shadow: none;
         border: 1px solid #000;
         outline: 1px solid #000;
+        @media screen and (max-width: 767.98px) {
+          border: 1px solid #e59700;
+          outline: 1px solid #e59700;
+        }
       }
       &::-webkit-input-placeholder {
         font-family: "Roboto", "Times New Roman", "Noto Serif JP", sans-serif;
@@ -180,42 +190,6 @@ section.contact {
   }
   button:focus {
     box-shadow: none;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  section.contact {
-    padding: 0 20px;
-    .row {
-      input,
-      textarea {
-        &:focus {
-          border: 1px solid #e59700;
-          outline: 1px solid #e59700;
-        }
-      }
-      &.name div {
-        width: 50%;
-      }
-    }
-  }
-}
-
-@media screen and(min-width: 768px) {
-  section.contact {
-    padding: 0 30px;
-    .row {
-      input,
-      textarea {
-        &:focus {
-          border: 1px solid #e59700;
-          outline: 1px solid #e59700;
-        }
-      }
-      &.name div {
-        width: 25%;
-      }
-    }
   }
 }
 </style>
