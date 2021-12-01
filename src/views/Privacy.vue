@@ -188,7 +188,7 @@ h1.title {
 
 #privacy {
   margin-bottom: 108px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     padding: 0 20px;
     margin-bottom: 30px;
   }
