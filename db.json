@@ -1,13 +1,13 @@
 {
     "products": [{
             "id": 1,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N01"],
             "thumbnail": "https://i.imgur.com/qxwLHXO.jpg",
             "title": "盆景　五葉松",
             "description": "精美完成的五葉松",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=5.5cm　W=14cm　植物　H=17.5 W=31",
                 "thumbnails": [{
                         "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
                         "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
@@ -43,6 +43,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/02011828_5c54112ee02bf.jpg"
                 },
+                "comment": {
+                    "comment1": "這真是棒極了！",
+                    "comment2": "真的是一棵像大樹一樣美妙的小盆景。"
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -55,13 +59,13 @@
         },
         {
             "id": 2,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N01"],
             "thumbnail": "https://i.imgur.com/VRjlhWV.jpg",
             "title": "盆景　紫杜松",
             "description": "美麗的葉色紫杜松",
             "specification": {
-                "measurement": "器H=4cmW=7cm　植物H=11cmW=16cm",
+                "measurement": "器　H=4cm　W=7cm　植物　H=11cm　W=16cm",
                 "thumbnails": [{
                         "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/02/1a.jpg",
                         "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/02/1b.jpg"
@@ -93,6 +97,10 @@
                     "part2": "由具有 50 多年盆景經驗的職人精心打造的作品。",
                     "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/02/01211132_5c452f59e7039.jpg"
                 },
+                "comment": {
+                    "comment1": "變色的針葉樹也不錯。",
+                    "comment2": "樹形也很美，可以推薦。"
+                },
                 "difficulty": 3,
                 "rarity": 3,
                 "sunlight": 4,
@@ -105,13 +113,13 @@
         },
         {
             "id": 3,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N01"],
             "thumbnail": "https://i.imgur.com/UYnMR3F.jpg",
             "title": "盆景　真柏 No.5",
             "description": "外形極好的真柏",
             "specification": {
-                "measurement": "器H=7.5cm　W=11.5cm　植物H=15cm　W=21cm",
+                "measurement": "器　H=7.5cm　W=11.5cm　植物　H=15cm　W=21cm",
                 "thumbnails": [{
                         "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/03/1a.jpg",
                         "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/03/1b.jpg"
@@ -147,6 +155,10 @@
                     "part2": "厚實而強大的莖非常有震撼力。",
                     "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/03/10051254_5bb6e0810cfed.jpg"
                 },
+                "comment": {
+                    "comment1": "這是一個美妙的杜松盆景。",
+                    "comment2": "是一款正面完美度非常高的產品。"
+                },
                 "difficulty": 4,
                 "rarity": 5,
                 "sunlight": 4,
@@ -159,13 +171,13 @@
         },
         {
             "id": 4,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01"],
             "thumbnail": "https://i.imgur.com/8OvycMd.jpg",
             "title": "盆景　石化檜 No.3",
             "description": "稍大型尺寸感的石化檜",
             "specification": {
-                "measurement": "器H=5.5cmW=13cm　植物H=15cm　W=23cm",
+                "measurement": "器　H=5.5cm　W=13cm　植物　H=15cm　W=23cm",
                 "thumbnails": [{
                         "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/04/1a.jpg",
                         "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/04/1b.jpg"
@@ -193,6 +205,10 @@
                     "part2": "耐寒和耐高溫的植物，應全年將其置於室外通風良好、陽光充足的位置。作為一種常綠植物，其葉子可以全年欣賞。",
                     "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/04/08141502_5b72705fa845a.jpg"
                 },
+                "comment": {
+                    "comment1": "石化檜。",
+                    "comment2": "即使很小，像大樹一樣的輪廓也很棒。"
+                },
                 "difficulty": 2,
                 "rarity": 4,
                 "sunlight": 4,
@@ -205,52 +221,51 @@
         },
         {
             "id": 5,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01"],
             "thumbnail": "https://i.imgur.com/JHgOnjb.jpg",
             "title": "盆景　真柏",
             "description": "盆景的王道真柏，是非常美麗的一種盆景。",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=5cm　W=30cm　植物　H=25cm　W=32cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "美麗的真柏",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "這是一個有吸引力的項目，具有與容器和苔蘚的統一感。",
+                    "part2": "非常漂亮的三角形。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/05/07101904_5b4484c8bf79e.jpg"
+                },
+                "comment": {
+                    "comment1": "讓人聯想到嚴酷自然的劍和樹根非常漂亮。"
                 },
                 "difficulty": 3,
-                "rarity": 5,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "正統的", "喜好戶外", "長青", "送禮"]
             },
             "size": "medium",
             "price": 165000,
@@ -259,52 +274,56 @@
         },
         {
             "id": 6,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N01"],
             "thumbnail": "https://i.imgur.com/hflIxTq.jpg",
             "title": "盆景　黒松",
             "description": "富有魅力的黑松盆景",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=3.8cm　W=9cm　植物　H=11.5cm　W=19cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "作為陽剛之樹的代表的盆景黑松",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "特點是葉子又長又硬。",
+                    "part2": "易於栽培，因此受到各種人的廣泛青睞。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/06/10051133_5bb6cd63d4b55.jpg"
+                },
+                "comment": {
+                    "comment1": "有些人可能認為它很小。",
+                    "comment2": "然而，它是一種樹形，很難用手掌大小來表達這種世界觀。"
                 },
                 "difficulty": 3,
-                "rarity": 5,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "喜好戶外", "長青", "送禮"]
             },
             "size": "small",
             "price": 15400,
@@ -313,52 +332,52 @@
         },
         {
             "id": 7,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N02"],
             "thumbnail": "https://i.imgur.com/y3Ek89C.jpg",
             "title": "迷你盆景　火棘",
             "description": "小而可愛的火棘",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=7.5cm　W=8cm　植物　H=8.5cm　W=10cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "雖是小樹，卻能結果的盆景",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "雖然是很可愛的尺寸，但是有結果。",
+                    "part2": "長得很結實的葉子和樹枝雖然很小，但卻有分量感。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/07/08031242_5b63cf12c6c8e.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "Konect「朧」和 Pirankansa",
+                    "comment2": "雖然是很小的盆栽，但是很可愛呢。"
+                },
+                "difficulty": 2,
+                "rarity": 2,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "喜好戶外", "果實累累", "鮮花盛開", "長青"]
             },
             "size": "small",
             "price": 4950,
@@ -367,52 +386,52 @@
         },
         {
             "id": 8,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N02"],
             "thumbnail": "https://i.imgur.com/FRJ3gyP.jpg",
             "title": "迷你盆景　紅楓",
             "description": "新迷你盆景楓葉",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=8cm　W=7.5cm　植物　H=15cm　W=13cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "春天紅葉代表性的品種",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "您可以在春季和秋季兩次欣賞紅葉。",
+                    "part2": "新芽鮮豔的紅色在夏天變成綠色，秋天又變成紅葉。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/08/08031248_5b63d098066a5.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "對於從現在開始盆景的人，也推薦可愛的小女孩。",
+                    "comment2": "它被種植在一個稍大的盆中，以便於管理。"
+                },
+                "difficulty": 2,
+                "rarity": 2,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "喜好戶外", "四季分明", "紅葉", "落葉", "送禮"]
             },
             "size": "small",
             "price": 4180,
@@ -421,52 +440,52 @@
         },
         {
             "id": 9,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N02"],
             "thumbnail": "https://i.imgur.com/bNGE03J.jpg",
             "title": "迷你盆景　八房香丁木",
             "description": "葉子細小，枝條細細分開，即使很小也有大樹的感覺。",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=7.5cm　W=8cm　植物　H=6.5cm　W=8cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "清爽的檸檬綠葉",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "可愛的大小，但具有獨特的清爽葉子。",
+                    "part2": "是一棵漂亮的花樹，到處都是漂亮的花朵。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/09/08031319_5b63d7d343af8.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "Konect「朧」和 Kochogi",
+                    "comment2": "這是一個非常年輕的盆景，但很可愛。"
+                },
+                "difficulty": 2,
+                "rarity": 2,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "喜好戶外", "果實累累", "鮮花盛開", "長青", "送禮"]
             },
             "size": "small",
             "price": 3520,
@@ -475,52 +494,56 @@
         },
         {
             "id": 10,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N02"],
             "thumbnail": "https://i.imgur.com/jcZdMxu.jpg",
             "title": "迷你盆景　女貞",
             "description": "獨具個性的樹形",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=7.5cm　W=8cm　植物　H=14.2cm　W=14.2cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "能享受果實和白色花朵樂趣的樹",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "是一種有趣的樹形女貞。",
+                    "part2": "適應環境的能力强，防暑耐寒。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/10/09031351_5b8cbde744649.jpg"
+                },
+                "comment": {
+                    "comment1": "在較低的位置上卷起來，形狀很有趣。",
+                    "comment2": "這是一個正宗的迷你盆景，枝條美麗。"
                 },
                 "difficulty": 3,
-                "rarity": 5,
+                "rarity": 3,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "正統的", "喜好戶外", "喜好戶外", "果實累累", "鮮花盛開", "落葉", "送禮"]
             },
             "size": "small",
             "price": 6270,
@@ -529,52 +552,48 @@
         },
         {
             "id": 11,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N02"],
             "thumbnail": "https://i.imgur.com/UzyNzJT.jpg",
             "title": "迷你盆景　台灣山椒",
             "description": "它是一種罕見的盆景品種，產量有限。",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=7.5cm　W=8cm　植物　H=13cm　W=16cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/5b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "山椒獨自的圓葉",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "景產量極少，實屬難得。",
+                    "part2": "樹形也是獨特而凉爽的葉子姿態。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/11/07102002_5b449260d1460.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "Konect「朧」和台灣山椒",
+                    "comment2": "罕見的稀有商品盆栽"
+                },
+                "difficulty": 2,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "正統的", "喜好戶外", "長青", "送禮"]
             },
             "size": "small",
             "price": 4070,
@@ -583,52 +602,56 @@
         },
         {
             "id": 12,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N02", "N03"],
             "thumbnail": "https://i.imgur.com/9Vn6SbN.jpg",
             "title": "迷你盆景　黄金姫花月",
             "description": "栽在信樂燒器皿中傾斜樹幹的黄金姫花月",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=7.5cm　W=10.5cm　植物　H=22cm　W=22cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "可愛尺寸的黃金姫花月",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "在寒冷的天氣裡變成美麗的顏色的黃金姫花月。",
+                    "part2": "因為植入信樂燒的花盆裏，所以非常有氣氛。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/12/01111341_5c381e5e461fb.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "在溫暖的月份，葉子的顏色會再次變綠。",
+                    "comment2": "因為有四個季節，您可以像盆景一樣欣賞它。"
+                },
+                "difficulty": 1,
+                "rarity": 3,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "喜好室內", "喜好戶外", "鮮花盛開", "紅葉", "長青", "送禮"]
             },
             "size": "medium",
             "price": 4950,
@@ -637,52 +660,52 @@
         },
         {
             "id": 13,
-            "category": ["部木屋", "箱庭"],
+            "categories": ["部木屋", "箱庭"],
             "types": ["N03"],
             "thumbnail": "https://i.imgur.com/7BCt7GE.jpg",
             "title": "多肉植物　矮人節",
             "description": "變成樹木的多肉植物",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=4.5cm　W=7.2cm　Φ=6.4cm　植物　H=7cm W=12cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "從秋天到春天生長的永生花，葉子像矮人一樣漂亮。",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "盛夏、隆冬是休眠期，夏天時要特別注意。",
+                    "part2": "雖然是多肉植物，但是耐寒性很强，可以耐寒到0度左右。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/13/11191534_5bf25977d6a8a.jpg"
+                },
+                "comment": {
+                    "comment1": "樹枝容易分叉，樹幹變粗的話，即使變小也會變成樹的形狀。",
+                    "comment2": "因為是喜歡陽光的多肉植物，所以要好好地曬光。"
                 },
                 "difficulty": 3,
-                "rarity": 5,
-                "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "rarity": 3,
+                "sunlight": 5,
+                "icons": ["初學者", "正統的", "喜好戶外", "鮮花盛開", "長青", "送禮", "生日慶典"]
             },
             "size": "small",
             "price": 3300,
@@ -691,52 +714,56 @@
         },
         {
             "id": 14,
-            "category": ["部木屋", "箱庭"],
+            "categories": ["部木屋", "箱庭"],
             "types": ["N03"],
             "thumbnail": "https://i.imgur.com/G1Ergu3.jpg",
             "title": "多肉植物　景天",
             "description": "長滿細毛的可愛景天",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=4.5cm　W=7.2cm　Φ=6.4cm　植物　H=2.8cm　W=6cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/14/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "毛茸茸的景天",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "特點是毛茸茸的葉子",
+                    "part2": "夏季和冬季是休眠期，注意不要過度澆水。",
+                    "cover": "https://github.com/MJEddie/development/blob/gh-pages/la-vie-verte/images/14/11191445_5bf24dfcea33d.jpg?raw=true"
+                },
+                "comment": {
+                    "comment1": "毛茸茸的可愛多肉植物。",
+                    "comment2": "如果你在室內陽光充足的地方種植它，它會健康地生長，你可以享受花的樂趣。"
                 },
                 "difficulty": 3,
-                "rarity": 5,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "正統的", "喜好室內", "喜好戶外", "鮮花盛開", "長青", "送禮", "生日慶典"]
             },
             "size": "small",
             "price": 3300,
@@ -745,52 +772,56 @@
         },
         {
             "id": 15,
-            "category": ["部木屋", "箱庭"],
+            "categories": ["部木屋", "箱庭"],
             "types": ["N03"],
             "thumbnail": "https://i.imgur.com/b73wgtj.jpg",
             "title": "多肉植物　孔雀之舞",
             "description": "透過扦插的繁殖方式增加個體",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=4.5cm　W=7.2cm　Φ=6.4cm　植物　H=7cm　W=13cm　",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "孔雀之舞，一種受歡迎的多肉植物。",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "這個孔雀圈，拼樹乾就叫孔雀冠，拼樹枝的就叫孔雀舞。",
+                    "part2": "這種孔雀舞是用插條增加拼枝，所以看起來像拼個體，形狀與原來的孔雀圈大不相同。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/15/11191646_5bf26a572c7f7.jpg"
+                },
+                "comment": {
+                    "comment1": "孔雀之舞這個名字非常貼切、纖細。",
+                    "comment2": "與一般的多肉厚葉不同，反而是很薄地起伏。"
                 },
                 "difficulty": 3,
-                "rarity": 5,
-                "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "rarity": 3,
+                "sunlight": 5,
+                "icons": ["初學者", "正統的", "喜好戶外", "長青", "送禮", "生日慶典"]
             },
             "size": "small",
             "price": 3850,
@@ -799,52 +830,48 @@
         },
         {
             "id": 16,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N03"],
             "thumbnail": "https://i.imgur.com/53esJSx.jpg",
             "title": "多肉植物　銀烏帽子",
             "description": "一頂銀色的烏木帽，帶有柔和的銀色刺，看起來像柔軟的頭髮",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=10cm　φ=12cm　植物　H=19cm　W=19cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/5b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "小銀烏帽子",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "帶有可愛蓬鬆毛狀刺的銀烏帽子。",
+                    "part2": "這是一個非常小的尺寸，所以考慮在哪裡裝飾它很有趣。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/16/04171301_5ad571869a199.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
-                "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "comment": {
+                    "comment1": "可愛的刺在移植的時候很癢。 但是可愛的身姿也能讓人忘記刺的癢。",
+                    "comment2": "因為花盆換成了沒有孔的東西，所以需要注意澆水。"
+                },
+                "difficulty": 2,
+                "rarity": 2,
+                "sunlight": 3,
+                "icons": ["初學者", "喜好室內", "送禮"]
             },
             "size": "medium",
             "price": 3300,
@@ -853,52 +880,56 @@
         },
         {
             "id": 17,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N03"],
             "thumbnail": "https://i.imgur.com/mrGebZU.jpg",
             "title": "蒙維利亞雪峰　仙人掌",
             "description": "猶如飄落在高雅粗獷的山峰上的積雪",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　=10.8cm　W=10.5cm　植物　H=11.5cm　W=12cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "被殘雪拼成的蒙維利亞雪峰",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "這是一座紅葉爛漫的殘雪峰。",
+                    "part2": "獨特的拼寫形狀非常漂亮。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/17/08171544_5b766ec07ffb6.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "正如名字一樣美麗。",
+                    "comment2": "因為種在黑色花盆裏，所以植物的顏色很顯眼。"
+                },
+                "difficulty": 2,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "正統的", "喜好室內", "鮮花盛開", "紅葉", "長青", "送禮"]
             },
             "size": "small",
             "price": 7150,
@@ -907,52 +938,56 @@
         },
         {
             "id": 18,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N03"],
             "thumbnail": "https://i.imgur.com/7fj1vVb.jpg",
             "title": "龍舌蘭　笹之雪",
             "description": "厚葉搭配葉片上的白色細紋讓人愛不釋手",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=14.5cm　φ=23cm　植物　H=11.5cm　W=17cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "漂亮的油漆和厚實的葉子",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "據說小巧、葉子短、厚度厚的比較好。",
+                    "part2": "這棵樹的葉子很短，肉很厚。 油漆也很厚實，生動。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/18/09071633_5b9229adb1118.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "油漆的美麗和葉子的形狀真是太棒了。",
+                    "comment2": "是無論如何希望在收藏裏的絕品。"
+                },
+                "difficulty": 2,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["鮮花盛開", "長青"]
             },
             "size": "small",
             "price": 38500,
@@ -961,52 +996,52 @@
         },
         {
             "id": 19,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N04", "N03"],
             "thumbnail": "https://i.imgur.com/B6t0uci.jpg",
             "title": "夾竹桃葉仙人筆",
             "description": "帶來好運的猴子樹",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=17cm　W=18cm　植物　H=50cm　W=30cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "幸福來自加那利群島產的幸福樹",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "據說是一種觸摸就會幸福的多肉植物。",
+                    "part2": "另一個名字是猴子樹。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/19/11221623_5bf659608ea37.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "它是一種大型且形狀獨特的植物。",
+                    "comment2": "很容易欣賞植物的形狀，因為它是種植在一個簡單的花盆裡。"
+                },
+                "difficulty": 4,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["初學者", "正統的", "喜好戶外", "落葉", "送禮"]
             },
             "size": "medium",
             "price": 9900,
@@ -1015,52 +1050,52 @@
         },
         {
             "id": 20,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N04"],
             "thumbnail": "https://i.imgur.com/TqodBkO.jpg",
             "title": "塊根植物　象牙宮",
             "description": "受歡迎的類型，以白馬城的名義流傳",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=9cm　φ=13cm　植物　H=14cm　W=16cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "被稱為白馬城的白色表皮",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "很受歡迎的品種",
+                    "part2": "特徵是塊根似的肥胖形狀和有刺的樹枝和樹幹。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/20/06201620_5b2a003c13d56.jpg"
                 },
-                "difficulty": 3,
-                "rarity": 5,
+                "comment": {
+                    "comment1": "現在很難找到 Konect 和 Pakipo Sandersey 的組合",
+                    "comment2": "有一種精緻的可愛和帥氣的氣氛！"
+                },
+                "difficulty": 4,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["正統的", "喜好戶外", "鮮花盛開", "落葉", "送禮"]
             },
             "size": "small",
             "price": 27500,
@@ -1069,52 +1104,56 @@
         },
         {
             "id": 21,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N04"],
             "thumbnail": "https://i.imgur.com/k0Lcu6d.jpg",
             "title": "非洲　霸王樹",
             "description": "一種非常罕見的無刺類型",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=8.5cm　W=16cm　植物　H=10cm　W=17cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "無刺的霸王樹",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "這是一個超級罕見的個體，並且是引起綴化的超稀有個體。",
+                    "part2": "是形狀也非常美麗地成長著的絕品。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/21/08171912_5b769f94d3f5b.jpg"
+                },
+                "comment": {
+                    "comment1": "這是非常罕見的無刺類型",
+                    "comment2": "美麗成長的個體也是很難得，請儘早購買。"
                 },
                 "difficulty": 3,
                 "rarity": 5,
-                "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "sunlight": 5,
+                "icons": ["正統的", "鮮花盛開", "落葉", "送禮"]
             },
             "size": "small",
             "price": 61600,
@@ -1123,52 +1162,52 @@
         },
         {
             "id": 22,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N04"],
             "thumbnail": "https://i.imgur.com/Vufg8ay.jpg",
-            "title": "大㦸科　鬼棲閣",
-            "description": "來自馬馬達加斯加西北部的稀有物種",
+            "title": "大㦸　鬼棲閣",
+            "description": "來自馬達加斯加西北部的稀有物種",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=20.5cm　φ=25cm　植物　H=23cm　W=43cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "稀少種中更稀少的大㦸",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "它是一種大戟屬植物，棲息在馬達加斯加的少數稀有物種中。",
+                    "part2": "請種植在陽光充足的室內或不暴露在雨中的室外。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/22/08251918_599ff9909826c.jpg"
                 },
-                "difficulty": 3,
+                "comment": {
+                    "comment1": "在見到它的那一刻就著迷了。",
+                    "comment2": "那個魄力讓很多看到的人驚歎不已。 讓我感受到當地自然的嚴酷。"
+                },
+                "difficulty": 4,
                 "rarity": 5,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["正統的", "喜好戶外", "送禮"]
             },
             "size": "medium",
             "price": 198000,
@@ -1177,52 +1216,56 @@
         },
         {
             "id": 23,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N04"],
             "thumbnail": "https://i.imgur.com/1Qt1LOW.jpg",
             "title": "沙漠　蘇木",
             "description": "日式古樹風格的塊根植物",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器H=25cm　φ=25cm　植物　H=32cm　W=40cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/6b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/7a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/23/7b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "馬達加斯加西南部自然生長的豆科塊根植物",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "外形酷似日本盆栽植物，酷似合歡花。",
+                    "part2": "這是同一豆科植物隨環境變化而進化的典型例子。",
+                    "cover": "https://github.com/MJEddie/development/blob/gh-pages/la-vie-verte/images/23/08251733_599fe0eaa6c86.jpg"
+                },
+                "comment": {
+                    "comment1": "它是一棵生長緩慢的樹，因此您可以將其作為盆景欣賞。",
+                    "comment2": "樹葉會掉下來，但你不必擔心。現場幾乎沒有樹葉。"
                 },
                 "difficulty": 3,
-                "rarity": 5,
+                "rarity": 4,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["正統的", "長青", "送禮"]
             },
             "size": "medium",
             "price": 88000,
@@ -1231,52 +1274,52 @@
         },
         {
             "id": 24,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N04"],
             "thumbnail": "https://i.imgur.com/T5e7slK.jpg",
             "title": "蘇鐵大戟　鐵甲丸",
             "description": "相當稀有的略大株鐵甲丸",
             "specification": {
-                "measurement": "器H=5.5cm　W=14cm　植物　H=17.5 W=31",
+                "measurement": "器　H=10cm　φ=18cm　植物　H=16cm　W=14cm",
                 "thumbnails": [{
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/1b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/1a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/1b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/2b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/2a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/2b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/3b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/3a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/3b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/4b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/4a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/4b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/5b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/5a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/5b.jpg"
                     },
                     {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/6b.jpg"
-                    },
-                    {
-                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7a.jpg",
-                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/01/7b.jpg"
+                        "large": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/6a.jpg",
+                        "small": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/6b.jpg"
                     }
                 ],
-                "subtitle": "這就是所謂盆景的漂亮樹形",
+                "subtitle": "鐵甲丸 × 鱗寶 = 怪魔玉 × 鐵甲丸 = 蘇鐵麒麟",
                 "paragraphs": {
-                    "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
-                    "part2": "您可以從正面以及任何角度欣賞它。",
-                    "cover": ""
+                    "part1": "在鐵甲丸和鱗寶交配的怪魔玉上再加上鐵甲丸交配的品種。",
+                    "part2": "雖然有點不太清楚，總之是一個很受歡迎的品種，外表看起來像可愛的鳳梨。",
+                    "cover": "https://raw.githubusercontent.com/MJEddie/development/gh-pages/la-vie-verte/images/24/08251729_599fdfd820486.jpg"
+                },
+                "comment": {
+                    "comment1": "它很受歡迎，因為它很容易生長並且看起來很可愛。",
+                    "comment2": "容器是 Konect 的，由 30 年以上引以為豪的作家以枯山水的沙紋為印象製作而成！"
                 },
                 "difficulty": 3,
-                "rarity": 5,
+                "rarity": 3,
                 "sunlight": 4,
-                "icons": ["正統的", "喜好戶外", "長青"]
+                "icons": ["長青", "送禮"]
             },
             "size": "medium",
             "price": 16500,
@@ -1285,7 +1328,7 @@
         },
         {
             "id": 25,
-            "category": ["部木屋"],
+            "categories": ["部木屋"],
             "types": ["N05"],
             "thumbnail": "https://i.imgur.com/on3GAWY.jpg",
             "title": "天堂鳥　鶴望蘭",
@@ -1327,6 +1370,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1339,7 +1386,7 @@
         },
         {
             "id": 26,
-            "category": ["部木屋"],
+            "categories": ["部木屋"],
             "types": ["N05"],
             "thumbnail": "https://i.imgur.com/kYIgnn6.jpg",
             "title": "傘榕　愛心榕",
@@ -1381,6 +1428,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1393,7 +1444,7 @@
         },
         {
             "id": 27,
-            "category": ["部木屋"],
+            "categories": ["部木屋"],
             "types": ["N05"],
             "thumbnail": "https://i.imgur.com/SBUTMB2.jpg",
             "title": "鵝掌柴  No.10",
@@ -1435,6 +1486,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1447,7 +1502,7 @@
         },
         {
             "id": 28,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N02", "N05"],
             "thumbnail": "https://i.imgur.com/OiJJPlT.jpg",
             "title": "白金葛　喜悅黃金葛",
@@ -1489,6 +1544,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1501,7 +1560,7 @@
         },
         {
             "id": 29,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N05"],
             "thumbnail": "https://i.imgur.com/XYXKHM8.jpg",
             "title": "亞當的針　花葉絲蘭",
@@ -1543,6 +1602,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1555,7 +1618,7 @@
         },
         {
             "id": 30,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N05"],
             "thumbnail": "https://i.imgur.com/uM7aX6j.jpg",
             "title": "流血之樹　龍血樹",
@@ -1597,6 +1660,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1609,7 +1676,7 @@
         },
         {
             "id": 31,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N04", "N03"],
             "thumbnail": "https://i.imgur.com/FEX6ho0.jpg",
             "title": "晃玉  布紋球",
@@ -1652,6 +1719,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1664,7 +1735,7 @@
         },
         {
             "id": 32,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N04", "N03"],
             "thumbnail": "https://i.imgur.com/72jA8S7.jpg",
             "title": "神玉  萬青玉",
@@ -1707,6 +1778,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1719,7 +1794,7 @@
         },
         {
             "id": 33,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N04"],
             "thumbnail": "https://i.imgur.com/uiKnC2U.jpg",
             "title": "颯貝大戟群生群",
@@ -1762,6 +1837,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1774,7 +1853,7 @@
         },
         {
             "id": 34,
-            "category": ["禮物", "部木屋"],
+            "categories": ["禮物", "部木屋"],
             "types": ["N03"],
             "thumbnail": "https://i.imgur.com/8guF1R1.jpg",
             "title": "十二卷屬  姬玉露",
@@ -1817,6 +1896,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1829,7 +1912,7 @@
         },
         {
             "id": 35,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N02", "N05"],
             "thumbnail": "https://i.imgur.com/TZNb4CB.jpg",
             "title": "瓶樹",
@@ -1872,6 +1955,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1884,7 +1971,7 @@
         },
         {
             "id": 36,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N02", "N05"],
             "thumbnail": "https://i.imgur.com/eB9neim.jpg",
             "title": "盆景  槐花",
@@ -1927,6 +2014,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1939,7 +2030,7 @@
         },
         {
             "id": 37,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N05"],
             "thumbnail": "https://i.imgur.com/QYgQxTE.jpg",
             "title": "吉祥樹  南天竹",
@@ -1982,6 +2073,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -1994,7 +2089,7 @@
         },
         {
             "id": 38,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01", "N02"],
             "thumbnail": "https://i.imgur.com/KB6Zz9B.jpg",
             "title": "盆景　豆金柑",
@@ -2036,6 +2131,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2048,7 +2147,7 @@
         },
         {
             "id": 39,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N04"],
             "thumbnail": "https://i.imgur.com/2DnD8Dh.jpg",
             "title": "象腳　龜甲龍",
@@ -2090,6 +2189,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2102,7 +2205,7 @@
         },
         {
             "id": 40,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01", "N02"],
             "thumbnail": "https://i.imgur.com/JT9zRG4.jpg",
             "title": "嚴選　八房香丁木 SAGA02",
@@ -2144,6 +2247,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2156,7 +2263,7 @@
         },
         {
             "id": 41,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01", "N02"],
             "thumbnail": "https://i.imgur.com/gKqD68T.jpg",
             "title": "嚴選　八房香丁木 COSMO",
@@ -2198,6 +2305,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2211,7 +2322,7 @@
     ],
     "weeks": [{
             "id": 31,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N04", "N03"],
             "thumbnail": "https://i.imgur.com/FEX6ho0.jpg",
             "title": "晃玉  布紋球",
@@ -2254,6 +2365,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2266,7 +2381,7 @@
         },
         {
             "id": 32,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": ["N04", "N03"],
             "thumbnail": "https://i.imgur.com/72jA8S7.jpg",
             "title": "神玉  萬青玉",
@@ -2309,6 +2424,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2321,7 +2440,7 @@
         },
         {
             "id": 33,
-            "category": ["禮物", "箱庭"],
+            "categories": ["禮物", "箱庭"],
             "types": "N04",
             "thumbnail": "https://i.imgur.com/uiKnC2U.jpg",
             "title": "颯貝大戟群生群",
@@ -2364,6 +2483,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2376,7 +2499,7 @@
         },
         {
             "id": 34,
-            "category": ["禮物", "部木屋"],
+            "categories": ["禮物", "部木屋"],
             "types": "N03",
             "thumbnail": "https://i.imgur.com/8guF1R1.jpg",
             "title": "十二卷屬  姬玉露",
@@ -2419,6 +2542,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2432,7 +2559,7 @@
     ],
     "new": [{
             "id": 35,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N02", "N05"],
             "thumbnail": "https://i.imgur.com/TZNb4CB.jpg",
             "title": "瓶樹",
@@ -2475,6 +2602,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2487,7 +2618,7 @@
         },
         {
             "id": 36,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N02", "N05"],
             "thumbnail": "https://i.imgur.com/eB9neim.jpg",
             "title": "盆景  槐花",
@@ -2530,6 +2661,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2542,7 +2677,7 @@
         },
         {
             "id": 37,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": "N05",
             "thumbnail": "https://i.imgur.com/QYgQxTE.jpg",
             "title": "吉祥樹  南天竹",
@@ -2585,6 +2720,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2597,7 +2736,7 @@
         },
         {
             "id": 12,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": ["N02", "N03"],
             "thumbnail": "https://i.imgur.com/9Vn6SbN.jpg",
             "title": "迷你盆景　黄金姫花月",
@@ -2640,6 +2779,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2653,7 +2796,7 @@
     ],
     "recommend": [{
             "id": 38,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01", "N02"],
             "thumbnail": "https://i.imgur.com/KB6Zz9B.jpg",
             "title": "盆景　豆金柑",
@@ -2695,6 +2838,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2707,7 +2854,7 @@
         },
         {
             "id": 39,
-            "category": ["部木屋", "禮物"],
+            "categories": ["部木屋", "禮物"],
             "types": "N04",
             "thumbnail": "https://i.imgur.com/2DnD8Dh.jpg",
             "title": "象腳　龜甲龍",
@@ -2749,6 +2896,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2761,7 +2912,7 @@
         },
         {
             "id": 40,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01", "N02"],
             "thumbnail": "https://i.imgur.com/JT9zRG4.jpg",
             "title": "嚴選　八房香丁木 SAGA02",
@@ -2803,6 +2954,10 @@
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
                 },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
+                },
                 "difficulty": 3,
                 "rarity": 5,
                 "sunlight": 4,
@@ -2815,7 +2970,7 @@
         },
         {
             "id": 41,
-            "category": ["箱庭"],
+            "categories": ["箱庭"],
             "types": ["N01", "N02"],
             "thumbnail": "https://i.imgur.com/gKqD68T.jpg",
             "title": "嚴選　八房香丁木 COSMO",
@@ -2856,6 +3011,10 @@
                     "part1": "苔蘚排列、分枝、樹形都是非常美麗的一個盆景。",
                     "part2": "您可以從正面以及任何角度欣賞它。",
                     "cover": ""
+                },
+                "comment": {
+                    "comment1": "",
+                    "comment2": ""
                 },
                 "difficulty": 3,
                 "rarity": 5,
