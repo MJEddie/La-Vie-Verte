@@ -519,7 +519,7 @@ export default {
       return result;
     },
     productSizeFilter(result) {
-      result.filter((product) => {
+      result = result.filter((product) => {
         return this.selectedSize.includes(product.size);
       });
       return result;
