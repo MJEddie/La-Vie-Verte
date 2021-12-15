@@ -1,7 +1,7 @@
 <template>
   <NavBar></NavBar>
   <main>
-    <div class="breadcrumb h-auto mb-0" style="--bs-breadcrumb-divider: ''">
+    <div class="breadcrumb h-auto mb-0" style="--bs-breadcrumb-divider: '';">
       <ol class="breadcrumb fw-light mb-0">
         <li class="breadcrumb-item px-4">
           <router-link to="/"><span>HOME</span></router-link>
@@ -316,11 +316,13 @@
                 </div>
                 <div class="col-md-8 ps-4">
                   <div class="card-body pt-0">
-                    <h4 class="card-title mb-4 pb-3">{{ item.title }}</h4>
+                    <h4 class="card-title fw-bold mb-4 pb-3">
+                      {{ item.title }}
+                    </h4>
                     <ul class="category ps-0">
                       <li
                         class="d-inline-block"
-                        v-for="(tag, index) in item.tag"
+                        v-for="(tag, index) in item.tags"
                         :key="index"
                       >
                         <span :class="tagFlag(tag)">{{ tag }}</span>
@@ -342,11 +344,7 @@
                         </button>
                         <button
                           type="button"
-                          class="
-                            btn btn-black btn-lg
-                            px-3
-                            dropdown-toggle dropdown-toggle-split
-                          "
+                          class="btn btn-black btn-lg px-3 dropdown-toggle dropdown-toggle-split"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
                         >
@@ -499,7 +497,7 @@ export default {
     productCategoryFilter(result) {
       result = result.filter((product) => {
         let flag = false;
-        product.category.forEach((category) => {
+        product.categories.forEach((category) => {
           if (this.selectedCategory.includes(category)) {
             flag = true;
           }
@@ -511,7 +509,7 @@ export default {
     productTypeFilter(result) {
       result = result.filter((product) => {
         let flag = false;
-        product.type.forEach((type) => {
+        product.types.forEach((type) => {
           if (this.selectedType.includes(type)) {
             flag = true;
           }
@@ -784,17 +782,19 @@ h3.title {
   }
 }
 
-.thumbnail .card-title {
-  font-size: 13px;
-}
-
-.thumbnail .card-text {
-  font-size: 12px;
+.thumbnail {
+  .card-title {
+    font-size: 13px;
+  }
+  .card-text {
+    font-size: 12px;
+  }
 }
 
 .list.row {
   padding-bottom: 70px;
   .card-title {
+    font-size: 16px;
     border-bottom: 1px dotted #ccc;
   }
   li {
